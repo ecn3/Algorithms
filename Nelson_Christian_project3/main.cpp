@@ -2,7 +2,7 @@
  ** Starter code for COP3014 Project 03 **
  *****************************************/
 
-/*  Author: TODO
+/*  Author: Christian Nelon
  *  COP3014 - Project 3
  *  Revision #: TODO
  */
