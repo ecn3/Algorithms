@@ -115,10 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ledger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="textmenu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ledger.hpp" />
     <ClInclude Include="textmenu.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

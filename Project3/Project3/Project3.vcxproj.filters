@@ -21,9 +21,15 @@
     <ClCompile Include="textmenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ledger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="textmenu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ledger.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

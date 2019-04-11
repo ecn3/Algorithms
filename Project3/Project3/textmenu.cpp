@@ -5,8 +5,10 @@
 #include <iostream>
 #include <string>
 #include "textmenu.hpp"
+#include "ledger.hpp"
 
 using namespace std;
+
 
 void TextMenu::run() {
 	int choice;
@@ -52,7 +54,9 @@ int TextMenu::selectOptions() {
 void TextMenu::addTransaction() {
 	int hour, minute, second;
 	string name;
+	string date;
 	double cost, price;
+	double profit;
 	cout << "Please input the time as three integers for hour, minute and second separated by space: ";
 	cin >> hour >> minute >> second;
 	cout << "Please input the item name: ";
@@ -62,7 +66,11 @@ void TextMenu::addTransaction() {
 	cout << "Please input the item sale price: ";
 	cin >> price;
 
+	profit = price - cost;
+	//date = (hour + ":" + minute + ":" + second);
 	// TODO: Add a transaction. Communicate with the ledger object.
+	//ledger.addTransaction(profit, name, date);
+	
 
 }
 

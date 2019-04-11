@@ -1,6 +1,4 @@
 ﻿  main.cpp
-c:\users\christian\github\algorithms\project3\project3\main.cpp(16): error C2065: 'Ledger': undeclared identifier
-c:\users\christian\github\algorithms\project3\project3\main.cpp(16): error C2146: syntax error: missing ';' before identifier 'ledger'
-c:\users\christian\github\algorithms\project3\project3\main.cpp(16): error C2065: 'ledger': undeclared identifier
   textmenu.cpp
   Generating Code...
+  Project3.vcxproj -> C:\Users\Christian\github\Algorithms\Project3\x64\Debug\Project3.exe

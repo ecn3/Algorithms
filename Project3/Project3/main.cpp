@@ -9,14 +9,17 @@
 
 #include <iostream>
 //#include "transaction.hpp"
-//#include "ledger.hpp"
+#include "ledger.hpp"
 #include "textmenu.hpp"
 
 int main() {
-	//Ledger ledger;
-	//TextMenu menu(ledger);
-	TextMenu menu;
+	Ledger ledger;
+	TextMenu menu(ledger);
+	//TextMenu menu;
 	menu.run();
+
+	system("pause");
+	return 0;
 
 }
 
