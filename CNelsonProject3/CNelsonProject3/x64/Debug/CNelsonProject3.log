@@ -1,7 +1,7 @@
-﻿  transaction.cpp
+﻿  main.cpp
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\main.cpp(16): warning C4101: 'ledger': unreferenced local variable
   Generating Code...
   Compiling...
-  main.cpp
-h:\github\algorithms\cnelsonproject3\cnelsonproject3\main.cpp(16): warning C4101: 'ledger': unreferenced local variable
+  textmenucpp.cpp
   Generating Code...
   CNelsonProject3.vcxproj -> H:\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe

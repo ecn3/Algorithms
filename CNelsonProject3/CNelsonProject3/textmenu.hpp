@@ -6,6 +6,8 @@
 #define TEXTMENU_H
 
 // TODO: include the head file(s) of the class(es) you designed
+#include "transaction.hpp"
+#include "ledger.hpp"
 
 class TextMenu {
 
