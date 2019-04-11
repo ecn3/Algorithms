@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\ecn3\Downloads\proj3startercode\main.cpp" />
-    <ClCompile Include="C:\Users\ecn3\Downloads\proj3startercode\textmenu.cpp" />
     <ClCompile Include="ledger.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="textmenucpp.cpp" />
     <ClCompile Include="transaction.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\ecn3\Downloads\proj3startercode\textmenu.hpp" />
     <ClInclude Include="ledger.hpp" />
+    <ClInclude Include="textmenu.hpp" />
     <ClInclude Include="transaction.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

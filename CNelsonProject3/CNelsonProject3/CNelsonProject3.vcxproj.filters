@@ -15,27 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\ecn3\Downloads\proj3startercode\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\ecn3\Downloads\proj3startercode\textmenu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ledger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="transaction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textmenucpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\ecn3\Downloads\proj3startercode\textmenu.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ledger.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="transaction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="textmenu.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
