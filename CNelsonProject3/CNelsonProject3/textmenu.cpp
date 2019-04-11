@@ -5,8 +5,11 @@
 #include <iostream>
 #include <string>
 #include "textmenu.hpp"
+#include "transaction.hpp"
+#include "ledger.hpp"
 
 using namespace std;
+Ledger ledger;
 
 void TextMenu::run() {
 	int choice;
@@ -67,6 +70,11 @@ void TextMenu::addTransaction() {
 }
 
 // TODO: constructor implementation here.
+/*
+TextMenu::TextMenu(Ledger ledger) {
+
+}
+*/
 
 void TextMenu::printSummary() {
 	int choice;

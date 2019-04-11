@@ -1,7 +1,6 @@
-﻿  main.cpp
-h:\github\algorithms\cnelsonproject3\cnelsonproject3\main.cpp(16): warning C4101: 'ledger': unreferenced local variable
+﻿  textmenu.cpp
   Generating Code...
   Compiling...
-  textmenucpp.cpp
+  main.cpp
   Generating Code...
   CNelsonProject3.vcxproj -> H:\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe

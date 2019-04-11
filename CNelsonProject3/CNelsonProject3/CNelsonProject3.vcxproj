@@ -21,7 +21,7 @@
   <ItemGroup>
     <ClCompile Include="ledger.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="textmenucpp.cpp" />
+    <ClCompile Include="textmenu.cpp" />
     <ClCompile Include="transaction.cpp" />
   </ItemGroup>
   <ItemGroup>

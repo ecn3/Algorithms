@@ -14,8 +14,7 @@
 
 int main() {
 	Ledger ledger;
-	//TextMenu menu(ledger);
-	TextMenu menu;
+	TextMenu menu(ledger);
 	menu.run();
 
 	return 0;
