@@ -67,14 +67,20 @@ void TextMenu::addTransaction() {
 	cin >> price;
 
 	profit = price - cost;
-	//date = (hour + ":" + minute + ":" + second);
+	date = (hour + ":" + minute + ":" + second);
 	// TODO: Add a transaction. Communicate with the ledger object.
-	//ledger.addTransaction(profit, name, date);
+	//ledger.createTransaction(profit, name, date);
+
 	
 
 }
 
 // TODO: constructor implementation here.
+TextMenu::TextMenu(Ledger ledger) {
+	cout << "Object is being created" << endl;
+
+}
+
 
 void TextMenu::printSummary() {
 	int choice;
@@ -118,7 +124,7 @@ void TextMenu::voidTransaction() {
 		cout << "You must input y for yes or n for no!" << endl;
 	}
 	if (choice == 'y')
-		//ledger.printSummary("id");
+		ledger.printSummary("id");
 	cout << "Please input the transaction id of the transaction you want to void: ";
 	cin >> id;
 	// TODO: Remove a transaction. Set the succeed flag.

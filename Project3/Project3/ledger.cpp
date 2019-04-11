@@ -9,14 +9,14 @@
 using namespace std;
 
 
-void Ledger::addTransaction() {
-	cout << "ledger.addTransaction" << endl;
+void Ledger::createTransaction() {
+	cout << "ledger.createTransaction" << endl;
 }
-void Ledger::voidTransaction() {
-	cout << "ledger.voidTransaction" << endl;
+void Ledger::deleteTransaction() {
+	cout << "ledger.deleteTransaction" << endl;
 }
 void Ledger::printSummary() {
-	cout << "ledger.printSummary" << endl;
+	cout << "ledger.getSummary" << endl;
 }
 
 

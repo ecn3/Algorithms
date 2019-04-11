@@ -9,11 +9,11 @@ class Ledger {
 
 
 	//void addTransaction(double profit, string name, string date);
-	void addTransaction();
+	void createTransaction();
 
 	void printSummary();
 
-	void voidTransaction();
+	void deleteTransaction();
 
 public:
 	//double profit;
