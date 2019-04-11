@@ -1,0 +1,41 @@
+﻿  ledger.cpp
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(15): error C3646: 'date': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(16): error C3646: 'name': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(15): error C3646: 'date': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(16): error C3646: 'name': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  main.cpp
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(15): error C3646: 'date': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(16): error C3646: 'name': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(15): error C3646: 'date': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(16): error C3646: 'name': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\main.cpp(17): error C2664: 'TextMenu::TextMenu(TextMenu &&)': cannot convert argument 1 from 'Ledger' to 'const TextMenu &'
+  c:\users\christian\github\algorithms\project3\project3\main.cpp(17): note: Reason: cannot convert from 'Ledger' to 'const TextMenu'
+  c:\users\christian\github\algorithms\project3\project3\main.cpp(17): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  textmenu.cpp
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(15): error C3646: 'date': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(16): error C3646: 'name': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(15): error C3646: 'date': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(16): error C3646: 'name': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\textmenu.cpp(116): error C2065: 'ledger': undeclared identifier
+  transactioncpp.cpp
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(15): error C3646: 'date': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(16): error C3646: 'name': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\textmenu.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(15): error C3646: 'date': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(16): error C3646: 'name': unknown override specifier
+c:\users\christian\github\algorithms\project3\project3\ledger.hpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Generating Code...
