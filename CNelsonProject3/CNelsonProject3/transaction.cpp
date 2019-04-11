@@ -10,13 +10,13 @@ using namespace std;
 
 
 void Transaction::createTransaction() {
-	cout << "ledger.createTransaction" << endl;
+	cout << "Transaction.createTransaction" << endl;
 }
 void Transaction::printSummary() {
-	cout << "ledger.printSummary" << endl;
+	cout << "Transaction.printSummary" << endl;
 }
 void Transaction::updateTransaction() {
-	cout << "ledger.updateTransaction" << endl;
+	cout << "Transaction.updateTransaction" << endl;
 }
 
 

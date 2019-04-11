@@ -66,7 +66,7 @@ void TextMenu::addTransaction() {
 	cin >> price;
 
 	// TODO: Add a transaction. Communicate with the ledger object.
-
+	ledger.run();
 }
 
 // TODO: constructor implementation here.
