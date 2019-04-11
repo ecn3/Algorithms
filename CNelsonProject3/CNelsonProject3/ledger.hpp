@@ -12,16 +12,14 @@ class Ledger {
 	// TODO: add instance variable(s) of the class(es) you designed
 
 
+public:
+	// TODO: constructor definition
+
 	void addTransaction();
 
 	void printSummary();
 
 	void voidTransaction();
-
-public:
-	// TODO: constructor definition
-
-	void run();
 };
 
 

@@ -9,16 +9,16 @@
 class Transaction {
 
 
+	
+
+public:
+
 	void createTransaction();
 
 	void printSummary();
 
 	void updateTransaction();
 
-public:
-
-
-	//void run();
 };
 
 
