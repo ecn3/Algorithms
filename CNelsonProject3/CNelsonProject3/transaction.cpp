@@ -2,11 +2,11 @@
 
 
 
-transaction::transaction()
+Transaction::Transaction()
 {
 }
 
 
-transaction::~transaction()
+Transaction::~Transaction()
 {
 }

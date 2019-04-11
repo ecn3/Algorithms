@@ -2,11 +2,11 @@
 
 
 
-ledger::ledger()
+Ledger::Ledger()
 {
 }
 
 
-ledger::~ledger()
+Ledger::~Ledger()
 {
 }

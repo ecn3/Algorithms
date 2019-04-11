@@ -1,8 +1,11 @@
-#pragma once
-class transaction
+#ifndef TRANSACTION_H
+#define TRANSACTION_H
+
+class Transaction
 {
 public:
-	transaction();
-	~transaction();
+	Transaction();
+	~Transaction();
 };
 
+#endif //TRANSACTION_H

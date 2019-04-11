@@ -1,8 +1,11 @@
-#pragma once
-class ledger
+#ifndef LEDGER_H
+#define LEDGER_H
+
+class Ledger
 {
 public:
-	ledger();
-	~ledger();
+	Ledger();
+	~Ledger();
 };
 
+#endif //LEDGER_H
