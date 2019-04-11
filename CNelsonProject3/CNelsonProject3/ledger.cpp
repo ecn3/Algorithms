@@ -10,6 +10,7 @@ using namespace std;
 
 void Ledger::run() {
 	cout << "ledger.run" << endl;
+	addTransaction();
 }
 
 
