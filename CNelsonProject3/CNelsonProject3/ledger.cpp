@@ -35,12 +35,12 @@ void Ledger::addTransaction(double profit, string name) {
 }
 
 Ledger::Ledger() {}
-
+/*
 Ledger::Ledger(Transaction transactions[]) {
 
 
 }
-
+*/
 
 
 void Ledger::printSummary() {
@@ -60,12 +60,20 @@ int Ledger::randomGenerator(int id) {
 	return id;
 }
 
-Transaction Ledger::getTransactionsByID(int id) {
-	try
-	{
-		return transactions[id];
-	}
-	catch (exception e) {
-		cout << "incorrect id";
-	}
+int Ledger::getTransactionsByID(int id) {
+	int i;
+	for (i = 0; i < numTransaction; i++) {
+		if (transactions[numTransaction].getId() == id) {
+			return i;
+		}
+
+		}
+
+
+}
+
+Transaction Ledger::getTransactionsByIndex(int num) {
+
+		return transactions[num];
+
 }

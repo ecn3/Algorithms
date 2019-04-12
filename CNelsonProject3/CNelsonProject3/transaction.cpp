@@ -29,23 +29,23 @@ Transaction::Transaction(double profit, string name, int id) {
 Transaction::Transaction() {}// defualt constructor
 
 double Transaction::getProfit(){
-	return profit;
+	return this->profit;
 }
 string Transaction::getName() {
-	return name;
+	return this->name;
 }
 int Transaction::getId() {
-	return id;
+	return this->id;
 }
 
 void Transaction::setProfit(double profit) {
-	profit = this->profit;
+	this->profit = profit;
 }
 void Transaction::setName(string name) {
-	name = this->name;
+	this->name = name;
 }
 void Transaction::setId(int id) {
-	id = this->id;
+	this->id = id;
 }
 
 

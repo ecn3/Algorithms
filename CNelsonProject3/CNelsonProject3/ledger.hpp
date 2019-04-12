@@ -28,8 +28,8 @@ public:
 
 	void voidTransaction();
 
-	Transaction getTransactionsByID(int id);
-
+	int getTransactionsByID(int id);
+	Transaction getTransactionsByIndex(int num);
 
 	int randomGenerator(int id);
 
@@ -37,7 +37,7 @@ public:
 
 	Ledger();
 
-	Ledger(Transaction transactions[]);
+	//Ledger(Transaction transactions[]);
 
 };
 
