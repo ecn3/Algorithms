@@ -95,16 +95,16 @@ void TextMenu::printSummary() {
 	}
 	switch (choice) {
 	case 1:
-		cout << "id: ";
-		int id;
-		cin >> id;
-		cout << "ledger name" << ledger.getTransactionsByIndex(ledger.getTransactionsByID(id)).getName();
+		// TODO: print summary sorted by id
+		ledger.printSummary();
 		break;
 	case 2:
 		// TODO: print summary sorted by name
+		ledger.printSummary();
 		break;
 	case 3:
 		// TODO: print summary sorted by profit
+		ledger.printSummary();
 		break;
 	}
 	cout << endl;
