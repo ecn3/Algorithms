@@ -34,8 +34,10 @@ public:
 	int randomGenerator(int id);
 
 
+
 	Ledger();
 
+	Ledger(Transaction transactions[]);
 
 };
 

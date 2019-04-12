@@ -72,11 +72,11 @@ void TextMenu::addTransaction() {
 }
 
 // TODO: constructor implementation here.
-/*
+
 TextMenu::TextMenu(Ledger ledger) {
 
 }
-*/
+
 
 void TextMenu::printSummary() {
 	int choice;

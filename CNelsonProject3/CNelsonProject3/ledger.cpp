@@ -27,12 +27,13 @@ void Ledger::addTransaction(double profit, string name) {
 	numTransaction++;
 }
 
-/*
-Ledger::Ledger() {
+Ledger::Ledger() {}
+
+Ledger::Ledger(Transaction transactions) {
 
 
 }
-*/
+
 
 
 void Ledger::printSummary() {
