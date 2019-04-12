@@ -1,8 +1,6 @@
-﻿  main.cpp
-  Generating Code...
-  Compiling...
+﻿  ledger.cpp
+  main.cpp
+  textmenu.cpp
   transaction.cpp
   Generating Code...
-  Skipping... (no relevant changes detected)
-  textmenu.cpp
-  CNelsonProject3.vcxproj -> H:\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe
+  CNelsonProject3.vcxproj -> C:\Users\Christian\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe
