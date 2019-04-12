@@ -8,11 +8,9 @@
 
 class Transaction {
 
-	double profit;
-	std::string name;
+	double profit, cost, price;
+	std::string name, time;
 	int id;
-
-	
 
 public:
 
@@ -24,7 +22,7 @@ public:
 
 	Transaction(); // default constructor
 
-	Transaction(double profit, std::string name, int id); // contructor
+	Transaction(double profit, std::string name, int id, double cost, double price, std::string time); // contructor
 
 	double getProfit();
 	std::string getName();
@@ -33,6 +31,16 @@ public:
 	void setProfit(double profit);
 	void setName(std::string name);
 	void setId(int it);
+
+	double getCost();
+	double getPrice();
+	std::string getTime();
+
+
+	void setCost(double cost);
+	void setPrice(double profit);
+	void setTime(std::string time);
+
 
 };
 

@@ -23,7 +23,7 @@ public:
 
 	int numTransaction = 0;
 
-	void addTransaction(double profit, std::string name);
+	void addTransaction(double profit, std::string name, double cost, double price, std::string time);
 
 	void printSummary();
 

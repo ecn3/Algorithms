@@ -54,7 +54,7 @@ int TextMenu::selectOptions() {
 
 void TextMenu::addTransaction() {
 	int hour, minute, second;
-	string name;
+	string name, time;
 	double cost, price, profit;
 	cout << "Please input the time as three integers for hour, minute and second separated by space: ";
 	cin >> hour >> minute >> second;
@@ -64,10 +64,10 @@ void TextMenu::addTransaction() {
 	cin >> cost;
 	cout << "Please input the item sale price: ";
 	cin >> price;
-
+	time = "";
 	profit = (price - cost);
 	// TODO: Add a transaction. Communicate with the ledger object.
-	ledger.addTransaction(profit, name);
+	ledger.addTransaction(profit, name, cost, price, time);
 	
 }
 

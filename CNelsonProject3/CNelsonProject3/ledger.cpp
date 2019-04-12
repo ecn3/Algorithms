@@ -13,7 +13,7 @@ using namespace std;
 
 
 
-void Ledger::addTransaction(double profit, string name) {
+void Ledger::addTransaction(double profit, string name, double cost, double price, string time) {
 
 	int id = 0;
 	id = randomGenerator(id);
@@ -23,7 +23,7 @@ void Ledger::addTransaction(double profit, string name) {
 		cout << "Max transactions" << endl;
 	}// makes sure dont add if we have 10 transactions
 	else {
-		Transaction transaction(profit, name, id); // creates new transaction
+		Transaction transaction(profit, name, id, cost, price, time); // creates new transaction
 		transactions[numTransaction] = transaction; // sets transactions array index of num to transaction
 		numTransaction++; // increases num transaction
 	}
@@ -46,30 +46,44 @@ Ledger::Ledger(Transaction transactions[]) {
 void Ledger::printSummary() {
 	cout << "ledger.printSummary" << endl;
 	for (int i = 0; i < numTransaction; i++) {
+
+		cout << "Time: " << transactions[i].getTime() << endl;
+
 		cout << "Id: " << transactions[i].getId() << endl;
 		cout << "Name: " << transactions[i].getName() << endl;
+
+		cout << "Cost: " << transactions[i].getCost() << endl;
+		cout << "Selling Price: " << transactions[i].getPrice() << endl;
+
 		cout << "Profit: " << transactions[i].getProfit() << endl << endl;
+
 	}
 }
 
 bool Ledger::voidTransaction(int id) {
 	cout << "ledger.voidTransaction" << endl;
-	int index;
+	try {
+		int index;
 
-	for (int i = 0; i < numTransaction; i++) {
-		if (transactions[i].getId() == id) {
-			index = i;
-		}
-	}// takes in id returns index
+		for (int i = 0; i < numTransaction; i++) {
+			if (transactions[i].getId() == id) {
+				index = i;
+			}
+		}// takes in id returns index
 
 
-	for (int i = index; i < numTransaction; ++i) {
-		transactions[i] = transactions[i + 1];
-	} // delete by index
+		for (int i = index; i < numTransaction; ++i) {
+			transactions[i] = transactions[i + 1];
+		} // delete by index
 
-	numTransaction--;
+		numTransaction--;
 
-	return true;
+		return true;
+	}
+	catch (exception e) {
+		cout << "No delation allowed you dont have any transactions";
+			return false;
+	}
 }
 
 

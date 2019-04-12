@@ -21,10 +21,13 @@ void Transaction::updateTransaction() {
 
 Transaction::Transaction() {}// defualt constructor
 
-Transaction::Transaction(double profit, string name, int id) {
+Transaction::Transaction(double profit, string name, int id, double cost, double price, string time) {
 	this->profit = profit;
 	this->name = name;
 	this->id = id;
+	this->cost = cost;
+	this->price = price;
+	this->time = time;
 }// implement constructor
 
 
@@ -40,6 +43,19 @@ int Transaction::getId() {
 	return this->id;
 }
 
+
+double Transaction::getCost() {
+	return this->cost;
+}
+double Transaction::getPrice() {
+	return this->cost;
+}
+string Transaction::getTime() {
+	return this->time;
+}
+
+
+
 void Transaction::setProfit(double profit) {
 	this->profit = profit;
 }
@@ -51,3 +67,12 @@ void Transaction::setId(int id) {
 }
 
 
+void Transaction::setCost(double cost) {
+	this->cost = cost;
+}
+void Transaction::setPrice(double price) {
+	this->price = price;
+}
+void Transaction::setTime(string time) {
+	this->name = time;
+}
