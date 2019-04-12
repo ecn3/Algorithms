@@ -101,10 +101,12 @@ void TextMenu::printSummary() {
 		break;
 	case 2:
 		// TODO: print summary sorted by name
+		ledger.sortByName();
 		ledger.printSummary();
 		break;
 	case 3:
 		// TODO: print summary sorted by profit
+		ledger.sortByProfit();
 		ledger.printSummary();
 		break;
 	}

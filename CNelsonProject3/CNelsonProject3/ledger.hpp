@@ -33,7 +33,10 @@ public:
 	Transaction getTransactionsByIndex(int num);
 
 	int randomGenerator(int id);
+
 	void sortByid();
+	void sortByName();
+	void sortByProfit();
 
 
 	Ledger();
