@@ -37,7 +37,8 @@ void Ledger::voidTransaction() {
 
 
 int Ledger::randomGenerator(int id) {
-	id = rand()% 2000 + 1000;
+	id = rand()% 2000 + 1000;
+
 	return id;
 }
 

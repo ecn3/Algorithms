@@ -17,6 +17,11 @@ class Ledger {
 public:
 	// TODO: constructor definition
 
+	double profit;
+	std::string name;
+	int id;
+
+
 	void addTransaction(double profit, std::string name);
 
 	void printSummary();

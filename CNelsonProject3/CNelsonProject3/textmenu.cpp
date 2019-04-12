@@ -9,7 +9,7 @@
 #include "ledger.hpp"
 
 using namespace std;
-Ledger ledger;
+
 
 void TextMenu::run() {
 	int choice;
@@ -67,7 +67,10 @@ void TextMenu::addTransaction() {
 
 	profit = (price - cost);
 	// TODO: Add a transaction. Communicate with the ledger object.
-	ledger.addTransaction(profit, name);
+	ledger[0].addTransaction(profit, name);
+
+	cout << "ledger[0 name " << ledger[0].name;
+	
 }
 
 // TODO: constructor implementation here.
