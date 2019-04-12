@@ -124,7 +124,7 @@ void Ledger::sortByName() {
 
 	for (int i = 0; i < numTransaction; i++) {
 		for (int j = 0; j < numTransaction - 1; j++) {
-			if (transactions[j].getId() > transactions[j + 1].getId()) {
+			if (transactions[j].getName() > transactions[j + 1].getName()) {
 				temp = transactions[j];
 
 				transactions[j] = transactions[j + 1];
@@ -143,7 +143,7 @@ void Ledger::sortByProfit() {
 
 	for (int i = 0; i < numTransaction; i++) {
 		for (int j = 0; j < numTransaction - 1; j++) {
-			if (transactions[j].getId() > transactions[j + 1].getId()) {
+			if (transactions[j].getProfit() < transactions[j + 1].getProfit()) {
 				temp = transactions[j];
 
 				transactions[j] = transactions[j + 1];
