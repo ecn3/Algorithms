@@ -22,6 +22,8 @@ public:
 	void printSummary();
 
 	void voidTransaction();
+
+	int randomGenerator(int id);
 };
 
 
