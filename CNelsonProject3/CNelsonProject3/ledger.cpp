@@ -47,10 +47,24 @@ void Ledger::printSummary() {
 	cout << "ledger.printSummary" << endl;
 }
 
-void Ledger::voidTransaction() {
+bool Ledger::voidTransaction(int id) {
 	cout << "ledger.voidTransaction" << endl;
+	int index;
+
+	for (int i = 0; i < numTransaction; i++) {
+		if (transactions[i].getId() == id) {
+			index = i;
+		}
+	}// takes in id returns index
+
+
+	for (int i = index; i < numTransaction; ++i) {
+		transactions[i] = transactions[i + 1];
+	} // delete by index
 
 	numTransaction--;
+
+	return true;
 }
 
 

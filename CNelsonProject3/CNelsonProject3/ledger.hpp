@@ -27,7 +27,7 @@ public:
 
 	void printSummary();
 
-	void voidTransaction();
+	bool voidTransaction(int id);
 
 	int getTransactionsByID(int id);
 	Transaction getTransactionsByIndex(int num);
