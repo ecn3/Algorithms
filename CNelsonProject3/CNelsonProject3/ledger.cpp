@@ -27,10 +27,13 @@ void Ledger::addTransaction(double profit, string name) {
 	numTransaction++;
 }
 
-void Ledger::Ledger() {
+/*
+Ledger::Ledger() {
 
 
 }
+*/
+
 
 void Ledger::printSummary() {
 	cout << "ledger.printSummary" << endl;
@@ -49,7 +52,7 @@ int Ledger::randomGenerator(int id) {
 	return id;
 }
 
-Transaction findTransaction(int id) {
+Transaction Ledger::getTransactionsByID(int id) {
 
 	return transactions[id];
 }

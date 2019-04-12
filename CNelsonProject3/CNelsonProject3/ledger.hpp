@@ -7,6 +7,7 @@
 
 #include <string>
 // TODO: include the head file(s) of the class(es) you designed
+#include "transaction.hpp"
 
 class Ledger {
 
@@ -18,6 +19,7 @@ public:
 	// TODO: constructor definition
 
 	Transaction transactions[10];
+
 	int numTransaction = 0;
 
 	void addTransaction(double profit, std::string name);
@@ -26,7 +28,7 @@ public:
 
 	void voidTransaction();
 
-	Transaction findTransaction(int id);
+	Transaction getTransactionsByID(int id);
 
 
 	int randomGenerator(int id);

@@ -1,4 +1,8 @@
-﻿  textmenu.cpp
-  main.cpp
+﻿  main.cpp
+  ledger.cpp
   Generating Code...
-  CNelsonProject3.vcxproj -> H:\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe
+  Skipping... (no relevant changes detected)
+  textmenu.cpp
+main.obj : error LNK2019: unresolved external symbol "public: __cdecl Ledger::Ledger(void)" (??0Ledger@@QEAA@XZ) referenced in function main
+main.obj : error LNK2019: unresolved external symbol "public: __cdecl TextMenu::TextMenu(class Ledger)" (??0TextMenu@@QEAA@VLedger@@@Z) referenced in function main
+H:\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe : fatal error LNK1120: 2 unresolved externals
