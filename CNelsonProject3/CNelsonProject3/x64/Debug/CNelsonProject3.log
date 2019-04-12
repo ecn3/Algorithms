@@ -1,9 +1,26 @@
 ﻿  transaction.cpp
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C3646: 'getName': unknown override specifier
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C2059: syntax error: '('
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C2238: unexpected token(s) preceding ';'
 h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.cpp(22): error C2084: function 'Transaction::Transaction(double,std::string,int)' already has a body
   h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(25): note: see previous definition of '{ctor}'
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.cpp(32): error C2039: 'getName': is not a member of 'Transaction'
+  h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(9): note: see declaration of 'Transaction'
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.cpp(33): error C2065: 'name': undeclared identifier
+  textmenu.cpp
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C3646: 'getName': unknown override specifier
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C2059: syntax error: '('
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C2238: unexpected token(s) preceding ';'
+  main.cpp
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C3646: 'getName': unknown override specifier
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C2059: syntax error: '('
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C2238: unexpected token(s) preceding ';'
   ledger.cpp
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C3646: 'getName': unknown override specifier
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C2059: syntax error: '('
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(28): error C2238: unexpected token(s) preceding ';'
 h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.cpp(30): error C2512: 'Transaction': no appropriate default constructor available
   h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(9): note: see declaration of 'Transaction'
-h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.cpp(34): error C2511: 'Ledger::Ledger(Transaction)': overloaded member function not found in 'Ledger'
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.cpp(32): error C2511: 'Ledger::Ledger(Transaction)': overloaded member function not found in 'Ledger'
   h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.hpp(12): note: see declaration of 'Ledger'
   Generating Code...

@@ -26,3 +26,24 @@ Transaction::Transaction(double profit, string name, int id) {
 }// implement constructor
 
 
+double Transaction::getProfit(){
+	return profit;
+}
+string Transaction::getName() {
+	return name;
+}
+int Transaction::getId() {
+	return id;
+}
+
+void Transaction::setProfit(double profit) {
+	profit = this->profit;
+}
+void Transaction::setName(string name) {
+	name = this->name;
+}
+void Transaction::setId(int id) {
+	id = this->id;
+}
+
+
