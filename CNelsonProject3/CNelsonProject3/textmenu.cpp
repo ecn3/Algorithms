@@ -127,7 +127,7 @@ void TextMenu::voidTransaction() {
 	cout << "Please input the transaction id of the transaction you want to void: ";
 	cin >> id;
 	// TODO: Remove a transaction. Set the succeed flag.
-	ledger.voidTransaction(id);
+	succeed = ledger.voidTransaction(id);
 	if (succeed) {
 		cout << "Transaction voided!" << endl;
 	}
