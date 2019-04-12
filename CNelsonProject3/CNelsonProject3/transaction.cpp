@@ -8,17 +8,6 @@
 
 using namespace std;
 
-
-void Transaction::createTransaction() {
-	cout << "Transaction.createTransaction" << endl;
-}
-void Transaction::printSummary() {
-	cout << "Transaction.printSummary" << endl;
-}
-void Transaction::updateTransaction() {
-	cout << "Transaction.updateTransaction" << endl;
-}
-
 Transaction::Transaction() {}// defualt constructor
 
 Transaction::Transaction(double profit, string name, int id, double cost, double price, string time) {

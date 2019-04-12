@@ -14,12 +14,6 @@ class Transaction {
 
 public:
 
-	void createTransaction();
-
-	void printSummary();
-
-	void updateTransaction();
-
 	Transaction(); // default constructor
 
 	Transaction(double profit, std::string name, int id, double cost, double price, std::string time); // contructor

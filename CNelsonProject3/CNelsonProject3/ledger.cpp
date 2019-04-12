@@ -27,24 +27,11 @@ void Ledger::addTransaction(double profit, string name, double cost, double pric
 		transactions[numTransaction] = transaction; // sets transactions array index of num to transaction
 		numTransaction++; // increases num transaction
 	}
-	//test me
-	cout << "ledger.name: " + getTransactionsByIndex(0).getName() << endl;
-	cout << "transaction.name: " + transactions[0].getName() << endl;
-	cout << "ledger.profit: " + std::to_string(profit) << endl;
-	cout << "ledger.id: " + std::to_string(id) << endl;
 }
 
 Ledger::Ledger() {}
-/*
-Ledger::Ledger(Transaction transactions[]) {
-
-
-}
-*/
-
 
 void Ledger::printSummary() {
-	cout << "ledger.printSummary" << endl;
 	for (int i = 0; i < numTransaction; i++) {
 
 		cout << "Time: " << transactions[i].getTime() << endl;
@@ -58,7 +45,6 @@ void Ledger::printSummary() {
 }
 
 bool Ledger::voidTransaction(int id) {
-	cout << "ledger.voidTransaction" << endl;
 	try {
 		int index;
 
@@ -110,8 +96,6 @@ Transaction Ledger::getTransactionsByIndex(int num) {
 
 
 void Ledger::sortByid() {
-	cout << "ledger.sortByid" << endl;
-
 	Transaction temp; // temporary transaction
 
 	for (int i = 0; i < numTransaction; i++){
@@ -129,8 +113,6 @@ void Ledger::sortByid() {
 }
 
 void Ledger::sortByName() {
-	cout << "ledger.sortByid" << endl;
-
 	Transaction temp; // temporary transaction
 
 	for (int i = 0; i < numTransaction; i++) {
@@ -148,8 +130,6 @@ void Ledger::sortByName() {
 }
 
 void Ledger::sortByProfit() {
-	cout << "ledger.sortByid" << endl;
-
 	Transaction temp; // temporary transaction
 
 	for (int i = 0; i < numTransaction; i++) {
