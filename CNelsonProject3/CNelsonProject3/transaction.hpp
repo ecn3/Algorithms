@@ -25,7 +25,7 @@ public:
 	Transaction(double profit, std::string name, int id){} // contructor
 
 	double getProfit();
-	string getName();
+	std::string getName();
 	int getId();
 
 	void setProfit(double profit);

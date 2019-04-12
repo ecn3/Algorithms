@@ -20,9 +20,9 @@ void Transaction::updateTransaction() {
 }
 
 Transaction::Transaction(double profit, string name, int id) {
-	profit = this->profit;
-	name = this->name;
-	id = this->id;
+	profit = getProfit();
+	name = getName();
+	id = getId();
 }// implement constructor
 
 
