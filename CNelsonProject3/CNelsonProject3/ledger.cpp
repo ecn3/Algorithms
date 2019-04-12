@@ -45,6 +45,11 @@ Ledger::Ledger(Transaction transactions[]) {
 
 void Ledger::printSummary() {
 	cout << "ledger.printSummary" << endl;
+	for (int i = 0; i < numTransaction; i++) {
+		cout << "Id: " << transactions[i].getId() << endl;
+		cout << "Name: " << transactions[i].getName() << endl;
+		cout << "Profit: " << transactions[i].getProfit() << endl << endl;
+	}
 }
 
 bool Ledger::voidTransaction(int id) {
