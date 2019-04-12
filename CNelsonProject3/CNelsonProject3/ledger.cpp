@@ -13,7 +13,7 @@ using namespace std;
 void Ledger::addTransaction(double profit, string name) {
 	cout << "ledger.addTransaction" << endl;
 	cout << "ledger.name: " + name << endl;
-	//cout << "ledger.profit " + profit << endl;
+	cout << "ledger.profit: " + std::to_string(profit) << endl;
 }
 
 // TODO: constructor implementation here.
