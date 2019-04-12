@@ -1,11 +1,2 @@
 ﻿  transaction.cpp
-h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.cpp(22): error C2084: function 'Transaction::Transaction(double,std::string,int)' already has a body
-  h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(25): note: see previous definition of '{ctor}'
-  textmenu.cpp
-  main.cpp
-  ledger.cpp
-h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.cpp(30): error C2512: 'Transaction': no appropriate default constructor available
-  h:\github\algorithms\cnelsonproject3\cnelsonproject3\transaction.hpp(9): note: see declaration of 'Transaction'
-h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.cpp(32): error C2511: 'Ledger::Ledger(Transaction)': overloaded member function not found in 'Ledger'
-  h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.hpp(12): note: see declaration of 'Ledger'
-  Generating Code...
+  CNelsonProject3.vcxproj -> H:\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe

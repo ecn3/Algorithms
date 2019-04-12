@@ -29,7 +29,7 @@ void Ledger::addTransaction(double profit, string name) {
 
 Ledger::Ledger() {}
 
-Ledger::Ledger(Transaction transactions) {
+Ledger::Ledger(Transaction transactions[]) {
 
 
 }

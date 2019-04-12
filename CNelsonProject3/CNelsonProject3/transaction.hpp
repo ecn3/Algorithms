@@ -22,6 +22,8 @@ public:
 
 	void updateTransaction();
 
+	Transaction(); // default constructor
+
 	Transaction(double profit, std::string name, int id){} // contructor
 
 	double getProfit();
