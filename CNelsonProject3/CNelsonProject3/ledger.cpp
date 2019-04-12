@@ -9,8 +9,11 @@
 using namespace std;
 
 
-void Ledger::addTransaction() {
+
+void Ledger::addTransaction(double profit, string name) {
 	cout << "ledger.addTransaction" << endl;
+	cout << "ledger.name: " + name << endl;
+	//cout << "ledger.profit " + profit << endl;
 }
 
 // TODO: constructor implementation here.
