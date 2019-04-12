@@ -7,18 +7,22 @@
 #include <random>
 #include <cstdlib>
 #include "ledger.hpp"
+#include "transaction.hpp"
 
 using namespace std;
 
 
 
 void Ledger::addTransaction(double profit, string name) {
+
 	cout << "ledger.addTransaction" << endl;
 	cout << "ledger.name: " + name << endl;
 	cout << "ledger.profit: " + std::to_string(profit) << endl;
 	int id = 0;
 	id = randomGenerator(id);
 	cout << "ledger.id: " + std::to_string(id) << endl;
+
+	Transaction transaction(profit, name, id); // creates new transaction
 }
 
 // TODO: constructor implementation here.
@@ -36,3 +40,4 @@ int Ledger::randomGenerator(int id) {
 	id = rand()% 2000 + 1000;
 	return id;
 }
+

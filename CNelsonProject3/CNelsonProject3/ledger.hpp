@@ -24,6 +24,8 @@ public:
 	void voidTransaction();
 
 	int randomGenerator(int id);
+
+
 };
 
 

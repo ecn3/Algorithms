@@ -19,6 +19,8 @@ public:
 
 	void updateTransaction();
 
+	Transaction(double profit, std::string name, int id){} // contructor
+
 };
 
 

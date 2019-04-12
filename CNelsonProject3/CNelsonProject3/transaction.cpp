@@ -18,5 +18,9 @@ void Transaction::printSummary() {
 void Transaction::updateTransaction() {
 	cout << "Transaction.updateTransaction" << endl;
 }
+/*
+Transaction::Transaction(double profit, string name, int id) {
 
+}// implement constructor
+*/
 
