@@ -28,8 +28,8 @@ void Ledger::addTransaction(double profit, string name) {
 		numTransaction++; // increases num transaction
 	}
 	//test me
-	cout << "ledger.addTransaction" << endl;
 	cout << "ledger.name: " + getTransactionsByIndex(0).getName() << endl;
+	cout << "transaction.name: " + transactions[0].getName() << endl;
 	cout << "ledger.profit: " + std::to_string(profit) << endl;
 	cout << "ledger.id: " + std::to_string(id) << endl;
 }

@@ -18,15 +18,17 @@ void Transaction::printSummary() {
 void Transaction::updateTransaction() {
 	cout << "Transaction.updateTransaction" << endl;
 }
-/*
-Transaction::Transaction(double profit, string name, int id) {
-	profit = getProfit();
-	name = getName();
-	id = getId();
-}// implement constructor
-*/
 
 Transaction::Transaction() {}// defualt constructor
+
+Transaction::Transaction(double profit, string name, int id) {
+	this->profit = profit;
+	this->name = name;
+	this->id = id;
+}// implement constructor
+
+
+
 
 double Transaction::getProfit(){
 	return this->profit;

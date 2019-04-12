@@ -1,8 +1,9 @@
-﻿  ledger.cpp
+﻿  transaction.cpp
   Generating Code...
-h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.cpp(73): warning C4715: 'Ledger::getTransactionsByID': not all control paths return a value
   Compiling...
   textmenu.cpp
   main.cpp
+  ledger.cpp
   Generating Code...
+h:\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.cpp(73): warning C4715: 'Ledger::getTransactionsByID': not all control paths return a value
   CNelsonProject3.vcxproj -> H:\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe
