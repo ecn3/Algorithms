@@ -54,6 +54,11 @@ int Ledger::randomGenerator(int id) {
 }
 
 Transaction Ledger::getTransactionsByID(int id) {
-
-	return transactions[id];
+	try
+	{
+		return transactions[id];
+	}
+	catch (exception e) {
+		cout << "incorrect id";
+	}
 }

@@ -120,7 +120,7 @@ void TextMenu::voidTransaction() {
 		cout << "You must input y for yes or n for no!" << endl;
 	}
 	if (choice == 'y')
-		//ledger.printSummary("id");
+		//ledger.printSummary();
 	cout << "Please input the transaction id of the transaction you want to void: ";
 	cin >> id;
 	// TODO: Remove a transaction. Set the succeed flag.

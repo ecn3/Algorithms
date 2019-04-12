@@ -13,6 +13,8 @@ class TextMenu {
 
 	// TODO: add instance variable(s) of the class(es) you designed
 
+	Transaction trans;
+
 	int selectOptions();
 
 	void addTransaction();
