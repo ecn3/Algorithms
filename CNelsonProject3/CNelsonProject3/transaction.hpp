@@ -8,6 +8,9 @@
 
 class Transaction {
 
+	double profit;
+	std::string name;
+	int id;
 
 	
 

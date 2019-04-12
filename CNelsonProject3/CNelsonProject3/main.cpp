@@ -13,7 +13,7 @@
 #include "textmenu.hpp"
 
 int main() {
-	Ledger ledger[10];
+	Ledger ledger;
 	TextMenu menu(ledger);
 	menu.run();
 

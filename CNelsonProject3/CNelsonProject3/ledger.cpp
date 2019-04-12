@@ -23,9 +23,14 @@ void Ledger::addTransaction(double profit, string name) {
 	cout << "ledger.id: " + std::to_string(id) << endl;
 
 	Transaction transaction(profit, name, id); // creates new transaction
+	transactions[numTransaction] = transaction;
+	numTransaction++;
 }
 
-// TODO: constructor implementation here.
+void Ledger::Ledger() {
+
+
+}
 
 void Ledger::printSummary() {
 	cout << "ledger.printSummary" << endl;
@@ -33,6 +38,8 @@ void Ledger::printSummary() {
 
 void Ledger::voidTransaction() {
 	cout << "ledger.voidTransaction" << endl;
+
+	numTransaction--;
 }
 
 
@@ -42,3 +49,7 @@ int Ledger::randomGenerator(int id) {
 	return id;
 }
 
+Transaction findTransaction(int id) {
+
+	return transactions[id];
+}

@@ -6,7 +6,7 @@
 #define TEXTMENU_H
 
 // TODO: include the head file(s) of the class(es) you designed
-//#include "transaction.hpp"
+#include "transaction.hpp"
 #include "ledger.hpp"
 
 class TextMenu {
@@ -24,12 +24,9 @@ class TextMenu {
 public:
 	// TODO: constructor definition
 
-	Ledger ledger[10];
+	Ledger ledger;
 
-	TextMenu(Ledger ledger[])
-	{
-		
-	}
+	TextMenu(Ledger ledger);
 
 	void run();
 };

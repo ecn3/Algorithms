@@ -67,9 +67,7 @@ void TextMenu::addTransaction() {
 
 	profit = (price - cost);
 	// TODO: Add a transaction. Communicate with the ledger object.
-	ledger[0].addTransaction(profit, name);
-
-	cout << "ledger[0 name " << ledger[0].name;
+	ledger.addTransaction(profit, name);
 	
 }
 
