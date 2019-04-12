@@ -23,7 +23,7 @@ class TextMenu {
 
 public:
 	// TODO: constructor definition
-	TextMenu(Ledger ledger)
+	TextMenu(Ledger ledger[])
 	{
 		
 	}
