@@ -1,7 +1,2 @@
-﻿  ledger.cpp
-  main.cpp
-  textmenu.cpp
-  transaction.cpp
-  Generating Code...
-c:\users\christian\github\algorithms\cnelsonproject3\cnelsonproject3\ledger.cpp(106): warning C4715: 'Ledger::getTransactionsByID': not all control paths return a value
+﻿  textmenu.cpp
   CNelsonProject3.vcxproj -> C:\Users\Christian\github\Algorithms\CNelsonProject3\x64\Debug\CNelsonProject3.exe

@@ -48,13 +48,10 @@ void Ledger::printSummary() {
 	for (int i = 0; i < numTransaction; i++) {
 
 		cout << "Time: " << transactions[i].getTime() << endl;
-
 		cout << "Id: " << transactions[i].getId() << endl;
 		cout << "Name: " << transactions[i].getName() << endl;
-
 		cout << "Cost: " << transactions[i].getCost() << endl;
 		cout << "Selling Price: " << transactions[i].getPrice() << endl;
-
 		cout << "Profit: " << transactions[i].getProfit() << endl << endl;
 
 	}

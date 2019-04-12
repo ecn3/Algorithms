@@ -64,7 +64,14 @@ void TextMenu::addTransaction() {
 	cin >> cost;
 	cout << "Please input the item sale price: ";
 	cin >> price;
-	time = "";
+	
+	time = to_string(hour);
+	time += ":";
+	time += to_string(minute);
+	time += ":";
+	time += to_string(second);
+
+	cout << "time menu" << time << endl;
 	profit = (price - cost);
 	// TODO: Add a transaction. Communicate with the ledger object.
 	ledger.addTransaction(profit, name, cost, price, time);
