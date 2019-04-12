@@ -96,3 +96,23 @@ Transaction Ledger::getTransactionsByIndex(int num) {
 		return transactions[num];
 
 }
+
+
+void Ledger::sortByid() {
+	cout << "ledger.sortByid" << endl;
+
+	Transaction temp; // temporary transaction
+
+	for (int i = 0; i < numTransaction; i++){
+		for (int j = 0; j < numTransaction - 1; j++){
+			if (transactions[j].getId() > transactions[j + 1].getId()){
+				temp = transactions[j];
+
+				transactions[j] = transactions[j + 1];
+
+				transactions[j + 1] = temp;
+			}
+		}
+	}
+
+}

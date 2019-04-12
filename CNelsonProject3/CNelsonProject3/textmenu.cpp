@@ -96,6 +96,7 @@ void TextMenu::printSummary() {
 	switch (choice) {
 	case 1:
 		// TODO: print summary sorted by id
+		ledger.sortByid();
 		ledger.printSummary();
 		break;
 	case 2:
