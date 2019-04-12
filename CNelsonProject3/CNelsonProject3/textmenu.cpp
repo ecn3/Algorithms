@@ -98,7 +98,7 @@ void TextMenu::printSummary() {
 		cout << "id: ";
 		int id;
 		cin >> id;
-		cout << "ledger name" + ledger.getTransactionsByIndex(ledger.getTransactionsByID(id)).getName();
+		cout << "ledger name" << ledger.getTransactionsByIndex(ledger.getTransactionsByID(id)).getName();
 		break;
 	case 2:
 		// TODO: print summary sorted by name

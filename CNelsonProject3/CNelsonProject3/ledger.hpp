@@ -14,11 +14,12 @@ class Ledger {
 	// TODO: add instance variable(s) of the class(es) you designed
 	//double profit;
 	//string name;
+	Transaction transactions[10];
 
 public:
 	// TODO: constructor definition
 
-	Transaction transactions[10];
+	
 
 	int numTransaction = 0;
 

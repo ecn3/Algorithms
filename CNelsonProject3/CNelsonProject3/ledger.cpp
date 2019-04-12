@@ -19,7 +19,7 @@ void Ledger::addTransaction(double profit, string name) {
 	id = randomGenerator(id);
 
 	// only create 10 transactions
-	if (numTransaction == 9) {
+	if (numTransaction == 10) {
 		cout << "Max transactions" << endl;
 	}// makes sure dont add if we have 10 transactions
 	else {
@@ -29,7 +29,7 @@ void Ledger::addTransaction(double profit, string name) {
 	}
 	//test me
 	cout << "ledger.addTransaction" << endl;
-	cout << "ledger.name: " + name << endl;
+	cout << "ledger.name: " + getTransactionsByIndex(0).getName() << endl;
 	cout << "ledger.profit: " + std::to_string(profit) << endl;
 	cout << "ledger.id: " + std::to_string(id) << endl;
 }
@@ -63,7 +63,7 @@ int Ledger::randomGenerator(int id) {
 int Ledger::getTransactionsByID(int id) {
 	int i;
 	for (i = 0; i < numTransaction; i++) {
-		if (transactions[numTransaction].getId() == id) {
+		if (transactions[i].getId() == id) {
 			return i;
 		}
 
