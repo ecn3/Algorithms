@@ -20,15 +20,19 @@ void Menu::run() {
 			break;
 		case 3:
 			cout << choice << endl;
+			rotateImage();
 			break;
 		case 4:
 			cout << choice << endl;
+			flipVerticallyImage();
 			break;
 		case 5:
 			cout << choice << endl;
+			flipHorizontallyImage();
 			break;
 		case 6:
 			cout << choice << endl;
+			greyscaleImage();
 			break;
 		case 7:
 			cout << "Thank you for using! Bye!" << endl;
@@ -56,4 +60,19 @@ int Menu::selectOptions() {
 		cin >> choice;
 	}
 	return choice;
+}
+
+
+void Menu::rotateImage() {
+	cout << "rotateImage" << endl;
+}
+
+void Menu::flipVerticallyImage() {
+	cout << "flipVerticallyImage" << endl;
+}
+void Menu::flipHorizontallyImage() {
+	cout << "flipHorizontallyImage" << endl;
+}
+void Menu::greyscaleImage() {
+	cout << "greyscaleImage" << endl;
 }
