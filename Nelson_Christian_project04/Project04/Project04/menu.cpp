@@ -66,7 +66,7 @@ int Menu::selectOptions() {
 	return choice;
 }
 
-Menu::Menu(FileReader fileReaderr) {
+Menu::Menu(FileReader fileReader, FileWriter fileWriter){
 
 }
 
@@ -77,6 +77,7 @@ void Menu::loadImage() {
 
 void Menu::saveImage() {
 	cout << "saveImage" << endl;
+	fileWriter.writeFile();
 }
 
 

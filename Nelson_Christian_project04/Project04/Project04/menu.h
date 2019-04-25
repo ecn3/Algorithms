@@ -2,6 +2,7 @@
 #define MENU_H
 
 #include "fileReader.h"
+#include "fileWriter.h"
 
 class Menu
 {
@@ -21,8 +22,9 @@ class Menu
 
 public:
 	FileReader fileReader;
+	FileWriter fileWriter;
 
-	Menu(FileReader fileReader);
+	Menu(FileReader fileReader, FileWriter fileWriter);
 
 	void run();
 };

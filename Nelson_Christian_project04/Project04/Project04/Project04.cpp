@@ -7,8 +7,10 @@ using namespace std;
 
 int main()
 {
-	FileReader filereader;
-	Menu menu(filereader);
+
+	FileReader fileReader;
+	FileWriter fileWriter;
+	Menu menu(fileReader, fileWriter);
 	menu.run();
 	return 0;
 }
