@@ -75,7 +75,23 @@ void Menu::saveImage() {
 
 
 void Menu::rotateImage() {
-	cout << "rotateImage" << endl;
+
+	// get user choice of rotation
+	int choice;
+	cout << endl;
+	cout << "Roate my image:" << endl;
+	cout << "1. 90 degrees clockwise." << endl;
+	cout << "2. 180 degrees clockwise." << endl;
+	cout << "3. 270 degrees clockwise." << endl;
+	cout << "4. Quit." << endl;
+	cout << "Input your choice: ";
+	cin >> choice;
+	while (choice > 4 || choice < 0) {
+		cout << "Invalid choice. Input 1 to 4 only!" << endl;
+		cout << "Input your choice: ";
+		cin >> choice;
+	}
+
 }
 
 void Menu::flipVerticallyImage() {
