@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "menu.h"
+#include "fileReader.h"
 #include <iostream>
 #include <string>
 
@@ -38,8 +39,9 @@ void Menu::run() {
 			break;
 		case 7:
 			cout << "Thank you for using! Bye!" << endl;
+			
 		}
-	} while (choice != 4);
+	} while (choice != 7);
 
 }
 
@@ -64,9 +66,13 @@ int Menu::selectOptions() {
 	return choice;
 }
 
+Menu::Menu(FileReader fileReaderr) {
+
+}
 
 void Menu::loadImage() {
 	cout << "loadImage" << endl;
+	fileReader.readFile();
 }
 
 void Menu::saveImage() {
