@@ -5,6 +5,10 @@ class Menu
 {
 	int selectOptions();
 
+	void loadImage();
+
+	void saveImage();
+
 	void rotateImage();
 
 	void flipVerticallyImage();

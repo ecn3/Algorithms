@@ -14,9 +14,11 @@ void Menu::run() {
 		switch (choice) {
 		case 1:
 			cout << choice << endl;
+			loadImage();
 			break;
 		case 2:
 			cout << choice << endl;
+			saveImage();
 			break;
 		case 3:
 			cout << choice << endl;
@@ -60,6 +62,15 @@ int Menu::selectOptions() {
 		cin >> choice;
 	}
 	return choice;
+}
+
+
+void Menu::loadImage() {
+	cout << "loadImage" << endl;
+}
+
+void Menu::saveImage() {
+	cout << "saveImage" << endl;
 }
 
 
