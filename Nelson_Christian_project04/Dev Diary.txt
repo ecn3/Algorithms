@@ -1,0 +1,35 @@
+Classes:
+
+File Reader PGM
+
+File Writer PGM
+
+Menu
+
+Load in an image
+
+Save image
+
+Convert
+
+	Rotate Image clockwise
+		
+	Flip Vertically(x-axis)
+
+	Flip Horizontally(y-axis)
+
+	Convert greyscale to black and white using userThrehold		
+		
+clean all resources
+		
+		
+Steps:
+Create menu
+
+Create Converion class
+
+Create File Reader
+
+Create File Writer
+
+Create conversion methods
