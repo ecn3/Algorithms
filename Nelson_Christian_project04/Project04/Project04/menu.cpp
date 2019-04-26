@@ -3,6 +3,7 @@
 #include "fileReader.h"
 #include <iostream>
 #include <string>
+#include "imageProcessing.h"
 
 using namespace std;
 
@@ -72,7 +73,11 @@ Menu::Menu(FileReader fileReader, FileWriter fileWriter){
 
 void Menu::loadImage() {
 	cout << "loadImage" << endl;
-	fileReader.readFile();
+	ImageProcessing img;
+
+	//enter file name
+	char **filename;
+	img.readImage(filename);
 }
 
 void Menu::saveImage() {
