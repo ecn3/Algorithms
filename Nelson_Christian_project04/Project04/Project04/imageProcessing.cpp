@@ -42,7 +42,7 @@ void ImageProcessing::readImage(string filename) {
 
 	numberOfColumns = stoi(col);
 	numberOfRows = stoi(row);
-
+	totalPiixels = numberOfColumns * numberOfRows;
 	cout << "columns: " << numberOfColumns << " rows: " << numberOfRows << endl;
 
 	getline(ifstream, line); // reads in 15
@@ -55,15 +55,23 @@ void ImageProcessing::readImage(string filename) {
 		img[i] = new int[numberOfRows];
 	}
 
-	string matrixOfNums;
+	cout << "columns: " << numberOfColumns << " rows: " << numberOfRows << endl;
 
-	//read in all rows
+	string* allNumberLines = new string[numberOfRows]; // all lines oif number
+
+	int* numbers = new int[totalPiixels]; // create list of numbers
+	int lines = 0;
+
+	while (!ifstream.eof()) //read in the rest of the lines
+	{
+		getline(ifstream, line);
+		allNumberLines[lines] = line;
+		cout << line << endl;
+		lines++;
+	}
 	for (int i = 0; i < numberOfRows; i++) {
-		getline(ifstream, line); // read in each row
-		matrixOfNums += (line + ' '); // put a space between rows
+		cout << "all nums" << allNumberLines[i] << endl;
 	}
 
-	cout << "matrixOfNums" << matrixOfNums;
-
-	ifstream.close();
+	ifstream.close(); // close file
 }
