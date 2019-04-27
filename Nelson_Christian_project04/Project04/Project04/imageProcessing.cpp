@@ -21,7 +21,7 @@ void print() {
 
 }
 
-int** ImageProcessing::readImage(string filename) {
+void ImageProcessing::readImage(string filename) {
 	string line;
 	ifstream ifstream; //create input file stream
 
@@ -52,9 +52,6 @@ int** ImageProcessing::readImage(string filename) {
 	
 	ifstream.close(); // close file
 
-	//myimg = img;
-
-	return img;
 }
 
 void ImageProcessing::rotateImage90(string filename) {

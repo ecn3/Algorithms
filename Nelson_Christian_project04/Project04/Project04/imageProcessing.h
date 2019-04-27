@@ -12,7 +12,7 @@ public:
 	int numberOfColumns, numberOfRows, numberOfBands, highValue, totalPixels;
 		//bands rpg
 
-	int** readImage(std::string filename); // returns 2darray
+	void readImage(std::string filename); // returns 2darray
 	// takes in filename
 	void rotateImage90(std::string filename); // returns 2darray
 	void rotateImage180(std::string filename); // returns 2darray

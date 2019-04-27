@@ -79,8 +79,6 @@ void Menu::loadImage() {
 	string filename = "proj4testimage.pgm";
 
 	imgProcessor.readImage(filename);
-	// test for 3
-	cout <<"loadImage 1 1: " << imgProcessor.readImage(filename)[1][1];
 }
 
 void Menu::saveImage() {
@@ -123,6 +121,7 @@ void Menu::rotateImage() {
 
 void Menu::flipVerticallyImage() {
 	cout << "flipVerticallyImage" << endl;
+
 }
 void Menu::flipHorizontallyImage() {
 	cout << "flipHorizontallyImage" << endl;
