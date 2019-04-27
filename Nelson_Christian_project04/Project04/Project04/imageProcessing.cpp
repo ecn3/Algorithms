@@ -33,7 +33,13 @@ void ImageProcessing::readImage(string filename) {
 	getline(ifstream, line);
 	ifstream >> numberOfColumns >> numberOfRows;
 	ifstream >> highValue;
+	
+	img.setVersion(version);
+	img.setNumberOfColumns(numberOfColumns);
+	img.setNumberOfRows(numberOfRows);
+	img.setHighValue(highValue);
 
+	cout << "Version " << version << endl;
 	cout << "numberOfColumns " << numberOfColumns << endl;
 	cout << "numberOfRows " << numberOfRows << endl;
 	cout << "highValue " << highValue << endl;
@@ -56,7 +62,7 @@ void ImageProcessing::readImage(string filename) {
 
 	Image image(filename, outfilename, version, numberOfRows, numberOfColumns, highValue, myimg);
 	//cout << " myimg[1][1]: " << myimg[1][1] << endl; //test for 3
-	ifstream.close(); // close fil
+	ifstream.close(); // close fill
 }
 
 void ImageProcessing::rotateImage90() {
@@ -131,6 +137,7 @@ void ImageProcessing::verticalFlip(){
 			cout << setfill(' ') << setw(2) << myimg[i][j];
 		}
 	}
+
 	img.setImgMatrix(myimg);
 }
 
