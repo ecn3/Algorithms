@@ -59,7 +59,7 @@ int** ImageProcessing::readImage(string filename) {
 void ImageProcessing::rotateImage90(string filename) {
 	cout << "ImageProcessing::rotateImage90" << endl;
 
-	int img90rotate[7][24];
+	int manipulatedImg[7][24];
 
 	for (int i = 0; i < 7; i++)
 	{
@@ -76,12 +76,12 @@ void ImageProcessing::rotateImage90(string filename) {
 	{
 		for (int j = i; j < 24 - i - 1; j++)
 		{
-			int temp = img90rotate[i][j];
-			img90rotate[i][j] = img90rotate[24 - 1 - j][i];
-			img90rotate[24 - 1 - j][i] = img90rotate[24 - 1 - i][24 - 1 - j];
-			img90rotate[24 - 1 - i][24 - 1 - j] = img90rotate[j][24 - 1 - i];
-			img90rotate[j][24 - 1 - i] = temp;
-			cout << setfill(' ') << setw(2) << img90rotate[i][j] << endl;
+			int temp = manipulatedImg[i][j];
+			manipulatedImg[i][j] = manipulatedImg[24 - 1 - j][i];
+			manipulatedImg[24 - 1 - j][i] = manipulatedImg[24 - 1 - i][24 - 1 - j];
+			manipulatedImg[24 - 1 - i][24 - 1 - j] = manipulatedImg[j][24 - 1 - i];
+			manipulatedImg[j][24 - 1 - i] = temp;
+			cout << setfill(' ') << setw(2) << manipulatedImg[i][j] << endl;
 		}
 	}
 
@@ -90,7 +90,7 @@ void ImageProcessing::rotateImage90(string filename) {
 void ImageProcessing::rotateImage180(string filename) {
 	cout << "ImageProcessing::rotateImage180" << endl;
 
-	int img90rotate[24][7];
+	int manipulatedImg[24][7];
 
 	for (int i = 0; i < 7; i++)
 	{
@@ -106,8 +106,22 @@ void ImageProcessing::rotateImage180(string filename) {
 void  ImageProcessing::rotateImage270(string filename) {
 	cout << "ImageProcessing::rotateImage270" << endl;
 
-	int img90rotate[24][7];
+	int manipulatedImg[7][24];
 
+	for (int i = 0; i < 24; i++)
+	{
+		for (int j = 0; j < 7; j++)
+		{
+			manipulatedImg[6 - i][j] = manipulatedImg[i][j];
+			cout << setfill(' ') << setw(2) << myimg[i][j];
+		}
+	}
+	
+}
+
+void ImageProcessing::verticalFlip(string filename)
+{
+	int manipulatedImg[24][7];
 	for (int i = 0; i < 7; i++)
 	{
 		for (int j = 0; i < 24; j++)
@@ -116,5 +130,38 @@ void  ImageProcessing::rotateImage270(string filename) {
 			cout << setfill(' ') << setw(2) << myimg[i][j];
 		}
 	}
-	
+}
+
+void ImageProcessing::horizontalFlip(string filename)
+{
+	int manipulatedImg[24][7];
+	for (int i = 0; i < 7; i++)
+	{
+		for (int j = 0; j < 24; j++)
+		{
+			cout << setfill(' ') << setw(2) << myimg[i][j];
+		}
+	}
+}
+
+void ImageProcessing::grayscale(string filename)
+{
+	int threshold;
+	cout << "Enter the threshold: ";
+	cin >> threshold;
+	int manipulatedImg[24][7];
+
+	for (int i = 0; i < 24; i++)
+	{
+		for (int j = 0; j < 7; j++)
+		{
+			if (manipulatedImg[i][j] > threshold) {
+				manipulatedImg[i][j] = threshold; // if is greater than threshold set to threshold
+			}
+			else{
+				manipulatedImg[i][j] = 0; // when less than or equal set to 0
+			}
+		}
+	}
+
 }

@@ -4,4 +4,4 @@ c:\users\christian\github\algorithms\nelson_christian_project04\project04\projec
 c:\users\christian\github\algorithms\nelson_christian_project04\project04\project04\imageprocessing.cpp(137): warning C4101: 'manipulatedImg': unreferenced local variable
   menu.cpp
   Generating Code...
-  Project04.vcxproj -> C:\Users\Christian\github\Algorithms\Nelson_Christian_project04\Project04\Debug\Project04.exe
+  Project04.vcxproj -> C:\Users\Christian\github\Algorithms\Nelson_Christian_project04\Project04\x64\Debug\Project04.exe
