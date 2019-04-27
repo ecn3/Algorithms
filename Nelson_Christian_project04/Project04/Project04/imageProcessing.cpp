@@ -49,21 +49,21 @@ int** ImageProcessing::readImage(string filename) {
 }
 
 int** ImageProcessing::rotateImage90(string filename) {
-
+	cout << "ImageProcessing::rotateImage90" << endl;
 	//delete the below
 	int** img[24][7];
 	return img[24][7];
 }
 
 int** ImageProcessing::rotateImage180(string filename) {
-	
+	cout << "ImageProcessing::rotateImage180" << endl;
 	//delete the below
 	int** img[24][7];
 	return img[24][7];
 }
 
 int** ImageProcessing::rotateImage270(string filename) {
-	
+	cout << "ImageProcessing::rotateImage270" << endl;
 	//delete the below
 	int** img[24][7];
 	return img[24][7];

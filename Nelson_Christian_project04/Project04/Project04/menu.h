@@ -5,6 +5,7 @@ class Menu
 {
 
 public:
+
 	int selectOptions();
 
 	void saveImage();

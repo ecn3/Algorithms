@@ -7,6 +7,7 @@
 using namespace std;
 
 ImageProcessing imgProcessor;
+string filename;
 
 void Menu::run() {
 	int choice;
@@ -100,7 +101,20 @@ void Menu::rotateImage() {
 		cout << "Input your choice: ";
 		cin >> choice;
 	}
-
+	switch (choice) {
+	case 1:
+		cout << choice << endl;
+		imgProcessor.rotateImage90(filename);
+		break;
+	case 2:
+		cout << choice << endl;
+		imgProcessor.rotateImage180(filename);
+		break;
+	case 3:
+		cout << choice << endl;
+		imgProcessor.rotateImage270(filename);
+		break;
+	}
 }
 
 void Menu::flipVerticallyImage() {
