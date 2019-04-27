@@ -76,7 +76,8 @@ void Menu::loadImage() {
 	ImageProcessing img;
 
 	//enter file name
-	char **filename;
+	string filename = "proj4testimage.pgm";
+
 	img.readImage(filename);
 }
 

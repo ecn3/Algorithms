@@ -14,7 +14,7 @@ public:
 	unsigned char * image;
 		//because reading char from file
 
-	void readImage(char **argv);
+	void readImage(std::string filename);
 	// takes in filename
 };
 
