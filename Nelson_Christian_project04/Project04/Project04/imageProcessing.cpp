@@ -71,6 +71,9 @@ void ImageProcessing::rotateImage90() {
 
 void ImageProcessing::rotateImage180() {
 	cout << "ImageProcessing::rotateImage180" << endl;
+	//horizontal flip then vertical flip
+	horizontalFlip();
+	verticalFlip();
 }
 
 void  ImageProcessing::rotateImage270() {
