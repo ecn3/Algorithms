@@ -5,11 +5,16 @@
 #include <sstream>
 #include <stdio.h>
 #include <string.h>
+#include <iomanip>
+#include <ios>
+#include <cmath>
+
 
 #define FALSE 0;
 #define TRUE 1;
 
 using namespace std;
+
 
 void print() {
 
@@ -45,26 +50,71 @@ int** ImageProcessing::readImage(string filename) {
 
 	
 	ifstream.close(); // close file
+
+	//myimg = img;
+
 	return img;
 }
 
-int** ImageProcessing::rotateImage90(string filename) {
+void ImageProcessing::rotateImage90(string filename) {
 	cout << "ImageProcessing::rotateImage90" << endl;
-	//delete the below
-	int** img[24][7];
-	return img[24][7];
+
+	int img90rotate[7][24];
+
+	for (int i = 0; i < 7; i++)
+	{
+		for (int j = 0; j < 24; j++)
+		{
+			myimg[i][j] = myimg[6 - j][i];
+			cout << setfill(' ') << setw(2) << myimg[i][j];
+		}
+	}
+
+
+
+	for (int i = 0; i < 24 / 2; i++)
+	{
+		for (int j = i; j < 24 - i - 1; j++)
+		{
+			int temp = img90rotate[i][j];
+			img90rotate[i][j] = img90rotate[24 - 1 - j][i];
+			img90rotate[24 - 1 - j][i] = img90rotate[24 - 1 - i][24 - 1 - j];
+			img90rotate[24 - 1 - i][24 - 1 - j] = img90rotate[j][24 - 1 - i];
+			img90rotate[j][24 - 1 - i] = temp;
+			cout << setfill(' ') << setw(2) << img90rotate[i][j] << endl;
+		}
+	}
+
 }
 
-int** ImageProcessing::rotateImage180(string filename) {
+void ImageProcessing::rotateImage180(string filename) {
 	cout << "ImageProcessing::rotateImage180" << endl;
-	//delete the below
-	int** img[24][7];
-	return img[24][7];
+
+	int img90rotate[24][7];
+
+	for (int i = 0; i < 7; i++)
+	{
+		for (int j = 0; j < 24; j++)
+		{
+			myimg[i][j] = myimg[i][6 - j];
+			cout << setfill(' ') << setw(2) << myimg[j][i];
+		}
+	}
+
 }
 
-int** ImageProcessing::rotateImage270(string filename) {
+void  ImageProcessing::rotateImage270(string filename) {
 	cout << "ImageProcessing::rotateImage270" << endl;
-	//delete the below
-	int** img[24][7];
-	return img[24][7];
+
+	int img90rotate[24][7];
+
+	for (int i = 0; i < 7; i++)
+	{
+		for (int j = 0; i < 24; j++)
+		{
+			myimg[i][j] = myimg[i][6 - j];
+			cout << setfill(' ') << setw(2) << myimg[i][j];
+		}
+	}
+	
 }

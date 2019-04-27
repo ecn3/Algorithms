@@ -6,7 +6,7 @@
 void print();
 
 class ImageProcessing {
-
+	int myimg[24][7]; // global img
 public:
 	//variables
 	int numberOfColumns, numberOfRows, numberOfBands, highValue, totalPixels;
@@ -14,9 +14,9 @@ public:
 
 	int** readImage(std::string filename); // returns 2darray
 	// takes in filename
-	int** rotateImage90(std::string filename); // returns 2darray
-	int** rotateImage180(std::string filename); // returns 2darray
-	int** rotateImage270(std::string filename); // returns 2darray
+	void rotateImage90(std::string filename); // returns 2darray
+	void rotateImage180(std::string filename); // returns 2darray
+	void rotateImage270(std::string filename); // returns 2darray
 };
 
 #endif
