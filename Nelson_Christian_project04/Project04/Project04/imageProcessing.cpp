@@ -25,6 +25,10 @@ void ImageProcessing::readImage(string filename) {
 	string line;
 	ifstream ifstream; //create input file stream
 
+	string infile = filename;
+	string outfilename;
+	string version = "P2";
+
 	ifstream.open(filename); //open file
 	getline(ifstream, line);
 	ifstream >> numberOfColumns >> numberOfRows;
@@ -48,8 +52,11 @@ void ImageProcessing::readImage(string filename) {
 			ifstream >> img[j][i];
 		}
 	}
+	//send img to img
 
-	
+	image image(infile, outfilename, version, numberOfRows, numberOfColumns, highValue, img);
+
+
 	ifstream.close(); // close file
 
 }
@@ -82,7 +89,6 @@ void ImageProcessing::rotateImage90() {
 			cout << setfill(' ') << setw(2) << manipulatedImg[i][j] << endl;
 		}
 	}
-
 }
 
 void ImageProcessing::rotateImage180() {
@@ -159,4 +165,20 @@ void ImageProcessing::grayscale()
 		}
 	}
 
+}
+
+void ImageProcessing::saveImage(string filename) {
+	ofstream myfile;
+	myfile.open(filename);
+	myfile << img.getVersion() << "\n";
+	myfile << img.getNumberOfColumns() << img.getNumberOfRows() << "\n";
+	myfile << img.getHighValue() << "\n";
+
+	for (int i = 0; i < numberOfRows; ++i) {
+	for (int j = 0; j < numberOfColumns; ++j) {
+	myfile << myimg[i][j] << "\n";
+}
+}
+
+	myfile.close();
 }

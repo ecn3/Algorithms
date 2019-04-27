@@ -20,7 +20,7 @@ public:
 	void verticalFlip();
 	void horizontalFlip();
 	void grayscale();
-
+	void saveImage(std::string filename);
 	ImageProcessing(); // constructor
 };
 

@@ -76,13 +76,34 @@ Menu::Menu(ImageProcessing imageProcessing) {
 void Menu::loadImage() {
 	cout << "loadImage" << endl;
 	//enter file name
-	string filename = "proj4testimage.pgm";
+	string filename;
+		//= "proj4testimage.pgm";
+
+	cout << "Enter filename followed by .pgm: ";
+	cin >> filename;
+
+	while (filename.length() > 31) {
+		cout << "Enter filename followed by .pgm, must be less than 31 characters: ";
+		cin >> filename;
+	}
 
 	imgProcessor.readImage(filename);
 }
 
 void Menu::saveImage() {
 	cout << "saveImage" << endl;
+
+	string filename;
+
+	cout << "Enter filename followed by .pgm: ";
+	cin >> filename;
+
+	while (filename.length() > 31) {
+		cout << "Enter filename followed by .pgm, must be less than 31 characters: ";
+		cin >> filename;
+	}
+
+	imgProcessor.saveImage(filename);
 }
 
 
@@ -106,26 +127,29 @@ void Menu::rotateImage() {
 	switch (choice) {
 	case 1:
 		cout << choice << endl;
-		imgProcessor.rotateImage90(filename);
+		imgProcessor.rotateImage90();
 		break;
 	case 2:
 		cout << choice << endl;
-		imgProcessor.rotateImage180(filename);
+		imgProcessor.rotateImage180();
 		break;
 	case 3:
 		cout << choice << endl;
-		imgProcessor.rotateImage270(filename);
+		imgProcessor.rotateImage270();
 		break;
 	}
 }
 
 void Menu::flipVerticallyImage() {
 	cout << "flipVerticallyImage" << endl;
+	imgProcessor.verticalFlip();
 
 }
 void Menu::flipHorizontallyImage() {
 	cout << "flipHorizontallyImage" << endl;
+	imgProcessor.horizontalFlip();
 }
 void Menu::greyscaleImage() {
 	cout << "greyscaleImage" << endl;
+	imgProcessor.grayscale();
 }
