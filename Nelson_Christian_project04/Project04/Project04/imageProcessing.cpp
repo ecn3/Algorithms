@@ -90,7 +90,21 @@ void ImageProcessing::horizontalFlip()
 
 void ImageProcessing::grayscale()
 {
+	int threshold;
 	cout << "ImageProcessing::grayscale" << endl;
+	cout << "Enter the Threshold: ";
+	cin >> threshold;
+
+	for (int i = 0; i < numberOfRows; ++i) {
+		for (int j = 0; j < numberOfColumns; ++j) {
+			if (myimg[j][i] > threshold) {
+				myimg[j][i] = threshold;
+			}
+			else {
+				myimg[j][i] = 0;
+			}
+		}
+	}
 }
 
 void ImageProcessing::saveImage(string filename) {
