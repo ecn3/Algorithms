@@ -3,12 +3,16 @@
 
 #include <string>
 #include "image.h"
+#define FALSE 0;
+#define TRUE 1;
 
 void print();
 
 class ImageProcessing {
 	Image img;
 	int myimg[24][7];
+	bool rotated = FALSE;
+	int arrary90[7][24];
 public:
 	//variables
 	int numberOfColumns, numberOfRows, numberOfBands, highValue, totalPixels;

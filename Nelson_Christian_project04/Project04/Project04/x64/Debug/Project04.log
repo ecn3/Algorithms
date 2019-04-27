@@ -1,2 +1,6 @@
-﻿  imageProcessing.cpp
+﻿  Project04.cpp
+  imageProcessing.cpp
+c:\users\christian\github\algorithms\nelson_christian_project04\project04\project04\imageprocessing.cpp(174): warning C4804: '<': unsafe use of type 'bool' in operation
+  menu.cpp
+  Generating Code...
   Project04.vcxproj -> C:\Users\Christian\github\Algorithms\Nelson_Christian_project04\Project04\x64\Debug\Project04.exe

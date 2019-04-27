@@ -9,10 +9,6 @@
 #include <ios>
 #include <cmath>
 
-
-#define FALSE 0;
-#define TRUE 1;
-
 using namespace std;
 
 ImageProcessing::ImageProcessing() {}
@@ -67,6 +63,31 @@ void ImageProcessing::readImage(string filename) {
 
 void ImageProcessing::rotateImage90() {
 	cout << "ImageProcessing::rotateImage90" << endl;
+	// swap j and i
+	// rotate 90 x,y --> y,-x
+
+	for (int i = 0; i < 7; i++)
+	{
+		for (int j = 0; j < 24; j++)
+		{
+			myimg[i][j] = myimg[6 - j][i];
+		}
+	}
+
+	for (int i = 0; i < 24 / 2; i++)
+	{
+		for (int j = i; j < 24 - i - 1; j++)
+		{
+			int temp = arrary90[i][j];
+			arrary90[i][j] = arrary90[24 - 1 - j][i];
+			arrary90[24 - 1 - j][i] = arrary90[24 - 1 - i][24 - 1 - j];
+			arrary90[24 - 1 - i][24 - 1 - j] = arrary90[j][24 - 1 - i];
+			arrary90[j][24 - 1 - i] = temp;
+		}
+	}
+
+	img.setImgMatrix90(arrary90);
+	rotated = TRUE;
 }
 
 void ImageProcessing::rotateImage180() {
@@ -78,7 +99,7 @@ void ImageProcessing::rotateImage180() {
 
 void  ImageProcessing::rotateImage270() {
 	cout << "ImageProcessing::rotateImage270" << endl;
-
+	//rotate 90 then vertical flip
 }
 
 void ImageProcessing::verticalFlip(){
@@ -144,12 +165,13 @@ void ImageProcessing::grayscale()
 }
 
 void ImageProcessing::saveImage(string filename) {
+
 	ofstream myfile;
 	myfile.open(filename);
 	myfile << img.getVersion() << "\n";
 	myfile << img.getNumberOfColumns() << " " << img.getNumberOfRows() << "\n";
 	myfile << img.getHighValue() << "\n";
-
+	if (rotated < 1) { // when not rotated
 	for (int i = 0; i < numberOfRows; ++i) {
 		for (int j = 0; j < numberOfColumns; ++j) {
 			myfile << myimg[j][i] << " ";
@@ -159,6 +181,17 @@ void ImageProcessing::saveImage(string filename) {
 		}
 		myfile << endl; // new line for row
 	}
-
+	}
+	else {
+		for (int i = 0; i < numberOfColumns; ++i) {
+			for (int j = 0; j < numberOfRows; ++j) {
+				myfile << arrary90[j][i] << " ";
+				if (arrary90[j][i] < 10) {
+					myfile << " "; // do an extra line when less than 10
+				}
+			}
+			myfile << endl; // new line for row
+		}
+	}
 	myfile.close();
 }
