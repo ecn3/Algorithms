@@ -15,7 +15,7 @@ void print() {
 
 }
 
-void ImageProcessing::readImage(string filename) {
+int** ImageProcessing::readImage(string filename) {
 	string line;
 	ifstream ifstream; //create input file stream
 
@@ -43,5 +43,7 @@ void ImageProcessing::readImage(string filename) {
 		}
 	}
 
+	
 	ifstream.close(); // close file
+	return img;
 }

@@ -5,8 +5,6 @@ class Menu
 {
 	int selectOptions();
 
-	void loadImage();
-
 	void saveImage();
 
 	void rotateImage();
@@ -18,6 +16,10 @@ class Menu
 	void greyscaleImage();
 
 public:
+	int numberOfColumns, numberOfRows, numberOfBands, highValue, totalPixels;
+
+	int** loadImage();
+
 	void run();
 };
 

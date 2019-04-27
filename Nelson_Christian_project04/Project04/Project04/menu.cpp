@@ -3,6 +3,11 @@
 #include <iostream>
 #include <string>
 #include "imageProcessing.h"
+#include<iostream> 
+#include <fstream>
+#include <sstream>
+#include <stdio.h>
+#include <string.h>
 
 using namespace std;
 
@@ -66,14 +71,39 @@ int Menu::selectOptions() {
 	return choice;
 }
 
-void Menu::loadImage() {
-	cout << "loadImage" << endl;
-	ImageProcessing img;
+int** Menu::loadImage() {
 
-	//enter file name
 	string filename = "proj4testimage.pgm";
 
-	img.readImage(filename);
+	string line;
+	ifstream ifstream; //create input file stream
+	ifstream.open(filename); //open file
+	getline(ifstream, line);
+	ifstream >> numberOfColumns >> numberOfRows; // set col and rows
+	ifstream >> highValue; // set high value
+
+	cout << "numberOfColumns " << numberOfColumns << endl;
+	cout << "numberOfRows " << numberOfRows << endl;
+	cout << "highValue " << highValue << endl;
+
+	// dynamic allocation
+	int** img = new int*[numberOfColumns];
+	for (int i = 0; i < numberOfColumns; ++i) {
+		img[i] = new int[numberOfRows];
+	}
+
+	//fill array
+	for (int i = 0; i < numberOfRows; i++)
+	{
+		for (int j = 0; j < numberOfColumns; j++)
+		{
+			ifstream >> img[j][i];
+		}
+	}
+	ifstream.close(); // close file
+
+	cout << img[1][1];
+	return img;
 }
 
 void Menu::saveImage() {

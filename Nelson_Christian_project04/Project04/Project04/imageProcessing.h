@@ -9,10 +9,10 @@ class ImageProcessing {
 
 public:
 	//variables
-	int numberOfColumns, numberOfRows, numberOfBands, highValue, totalPiixels;
+	int numberOfColumns, numberOfRows, numberOfBands, highValue, totalPixels;
 		//bands rpg
 
-	void readImage(std::string filename);
+	int** readImage(std::string filename); // returns 2darray
 	// takes in filename
 };
 
