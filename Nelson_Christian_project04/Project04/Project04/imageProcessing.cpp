@@ -101,8 +101,25 @@ void ImageProcessing::verticalFlip(){
 void ImageProcessing::horizontalFlip()
 {
 	cout << "ImageProcessing::horizontalFlip" << endl;
-}
+	//myimg[23][6] = myimg[0][6]
+	//if j = 6 k = 0
+	int temp[24][7]; //create temp
+	int k = 23;
 
+	for (int i = 0; i < numberOfRows; ++i) {
+		for (int j = 0; j < numberOfColumns; ++j) {
+			temp[k][i] = myimg[j][i];
+			k--; //count down
+		}
+		k = 23; //reset
+	}
+	for (int i = 0; i < numberOfRows; ++i) {
+		for (int j = 0; j < numberOfColumns; ++j) {
+			myimg[j][i] = temp[j][i]; // set to new
+
+		}
+	}
+}
 
 void ImageProcessing::grayscale()
 {
