@@ -18,12 +18,15 @@ public:
 	int getNumberOfColumns();
 	int getHighValue();
 
+	int getImgMatrix();
+
 	void setInfilename(std::string infilename);
 	void setOutfilename(std::string outfilename);
 	void setVersion(std::string version);
 	void setNumberOfRows(int numberOfRows);
 	void setNumberOfColumns(int numberOfColumns);
 	void setHighValue(int highValue);
+	void setImgMatrix(int img[24][7]);
 };
 
 #endif

@@ -36,6 +36,10 @@ int image::getHighValue() {
 	return this->highValue;
 }
 
+int image::getImgMatrix() {
+	return this->img[24][7];
+}
+
 void image::setInfilename(string infilename) {
 	this->infilename = infilename;
 }
@@ -53,4 +57,8 @@ void image::setNumberOfColumns(int numberOfColumns) {
 }
 void image::setHighValue(int highValue) {
 	this->highValue = highValue;
+}
+
+void image::setImgMatrix(int img[24][7]) {
+	this->img[24][7] = img[24][7];
 }

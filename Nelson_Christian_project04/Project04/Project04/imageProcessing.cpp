@@ -54,7 +54,7 @@ void ImageProcessing::readImage(string filename) {
 
 }
 
-void ImageProcessing::rotateImage90(string filename) {
+void ImageProcessing::rotateImage90() {
 	cout << "ImageProcessing::rotateImage90" << endl;
 
 	int manipulatedImg[7][24];
@@ -85,7 +85,7 @@ void ImageProcessing::rotateImage90(string filename) {
 
 }
 
-void ImageProcessing::rotateImage180(string filename) {
+void ImageProcessing::rotateImage180() {
 	cout << "ImageProcessing::rotateImage180" << endl;
 
 	for (int i = 0; i < 7; i++)
@@ -99,7 +99,7 @@ void ImageProcessing::rotateImage180(string filename) {
 
 }
 
-void  ImageProcessing::rotateImage270(string filename) {
+void  ImageProcessing::rotateImage270() {
 	cout << "ImageProcessing::rotateImage270" << endl;
 
 	int manipulatedImg[7][24];
@@ -115,8 +115,7 @@ void  ImageProcessing::rotateImage270(string filename) {
 	
 }
 
-void ImageProcessing::verticalFlip(string filename)
-{
+void ImageProcessing::verticalFlip(){
 
 	for (int i = 0; i < 7; i++)
 	{
@@ -128,7 +127,7 @@ void ImageProcessing::verticalFlip(string filename)
 	}
 }
 
-void ImageProcessing::horizontalFlip(string filename)
+void ImageProcessing::horizontalFlip()
 {
 
 	for (int i = 0; i < 7; i++)
@@ -140,7 +139,7 @@ void ImageProcessing::horizontalFlip(string filename)
 	}
 }
 
-void ImageProcessing::grayscale(string filename)
+void ImageProcessing::grayscale()
 {
 	int threshold;
 	cout << "Enter the threshold: ";
