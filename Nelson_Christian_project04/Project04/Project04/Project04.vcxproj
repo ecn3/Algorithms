@@ -151,12 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="image.h" />
     <ClInclude Include="imageProcessing.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Project04.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="image.cpp" />
     <ClCompile Include="imageProcessing.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="pch.cpp">

@@ -1,7 +1,2 @@
-﻿  imageProcessing.cpp
-c:\users\christian\github\algorithms\nelson_christian_project04\project04\project04\imageprocessing.cpp(93): warning C4101: 'manipulatedImg': unreferenced local variable
-c:\users\christian\github\algorithms\nelson_christian_project04\project04\project04\imageprocessing.cpp(124): warning C4101: 'manipulatedImg': unreferenced local variable
-c:\users\christian\github\algorithms\nelson_christian_project04\project04\project04\imageprocessing.cpp(137): warning C4101: 'manipulatedImg': unreferenced local variable
-  menu.cpp
-  Generating Code...
+﻿  image.cpp
   Project04.vcxproj -> C:\Users\Christian\github\Algorithms\Nelson_Christian_project04\Project04\x64\Debug\Project04.exe
