@@ -7,8 +7,8 @@ using namespace std;
 
 int main()
 {
-
-	Menu menu;
+	ImageProcessing imageProcessing;
+	Menu menu(imageProcessing);
 	menu.run();
 	return 0;
 }

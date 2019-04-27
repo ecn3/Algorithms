@@ -1,6 +1,6 @@
 #ifndef MENU_H
 #define MENU_H
-
+#include "imageProcessing.h"
 class Menu
 {
 
@@ -21,6 +21,11 @@ public:
 	void loadImage();
 
 	void run();
+
+	ImageProcessing imageProcessing;
+
+	Menu(ImageProcessing imageProcessing);
+
 private:
 
 };

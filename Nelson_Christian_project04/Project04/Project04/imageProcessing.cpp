@@ -15,6 +15,7 @@
 
 using namespace std;
 
+ImageProcessing::ImageProcessing() {}
 
 void print() {
 
@@ -90,8 +91,6 @@ void ImageProcessing::rotateImage90(string filename) {
 void ImageProcessing::rotateImage180(string filename) {
 	cout << "ImageProcessing::rotateImage180" << endl;
 
-	int manipulatedImg[24][7];
-
 	for (int i = 0; i < 7; i++)
 	{
 		for (int j = 0; j < 24; j++)
@@ -121,7 +120,7 @@ void  ImageProcessing::rotateImage270(string filename) {
 
 void ImageProcessing::verticalFlip(string filename)
 {
-	int manipulatedImg[24][7];
+
 	for (int i = 0; i < 7; i++)
 	{
 		for (int j = 0; i < 24; j++)
@@ -134,7 +133,7 @@ void ImageProcessing::verticalFlip(string filename)
 
 void ImageProcessing::horizontalFlip(string filename)
 {
-	int manipulatedImg[24][7];
+
 	for (int i = 0; i < 7; i++)
 	{
 		for (int j = 0; j < 24; j++)

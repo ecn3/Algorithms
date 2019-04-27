@@ -69,6 +69,10 @@ int Menu::selectOptions() {
 	return choice;
 }
 
+Menu::Menu(ImageProcessing imageProcessing) {
+
+}
+
 void Menu::loadImage() {
 	cout << "loadImage" << endl;
 	//enter file name

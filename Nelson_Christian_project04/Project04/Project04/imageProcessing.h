@@ -20,6 +20,8 @@ public:
 	void verticalFlip(std::string filename);
 	void horizontalFlip(std::string filename);
 	void grayscale(std::string filename);
+
+	ImageProcessing(); // constructor
 };
 
 #endif
