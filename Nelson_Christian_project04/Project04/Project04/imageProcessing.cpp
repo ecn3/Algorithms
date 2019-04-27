@@ -55,7 +55,7 @@ void ImageProcessing::readImage(string filename) {
 	//send img to img
 
 	Image image(filename, outfilename, version, numberOfRows, numberOfColumns, highValue, myimg);
-
+	//cout << " myimg[1][1]: " << myimg[1][1] << endl; //test for 3
 	ifstream.close(); // close file
 
 }
