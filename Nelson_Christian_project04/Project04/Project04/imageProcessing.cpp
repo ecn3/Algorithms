@@ -63,30 +63,18 @@ void ImageProcessing::readImage(string filename) {
 
 void ImageProcessing::rotateImage90() {
 	cout << "ImageProcessing::rotateImage90" << endl;
-	// swap j and i
-	// rotate 90 x,y --> y,-x
-
-	for (int i = 0; i < 7; i++)
-	{
-		for (int j = 0; j < 24; j++)
-		{
-			myimg[i][j] = myimg[6 - j][i];
-		}
+	// swap i j
+	// rotate 90 x,y = y,-x
+	//int arrary90[7][24];
+	// [0-7][0] = 1 = 6 2 = 5  =4
+	int h = 6;
+	for (int k = 0; k < numberOfColumns; k++) {
+		for (int i = 0; i < numberOfRows; ++i) {
+			arrary90[i][k] = myimg[h][k];
+			h--;
+		} // swaps first set of is
+		h = 6;
 	}
-
-	for (int i = 0; i < 24 / 2; i++)
-	{
-		for (int j = i; j < 24 - i - 1; j++)
-		{
-			int temp = arrary90[i][j];
-			arrary90[i][j] = arrary90[24 - 1 - j][i];
-			arrary90[24 - 1 - j][i] = arrary90[24 - 1 - i][24 - 1 - j];
-			arrary90[24 - 1 - i][24 - 1 - j] = arrary90[j][24 - 1 - i];
-			arrary90[j][24 - 1 - i] = temp;
-		}
-	}
-
-	img.setImgMatrix90(arrary90);
 	rotated = TRUE;
 }
 
