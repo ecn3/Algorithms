@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "menu.h"
-#include "fileReader.h"
 #include <iostream>
 #include <string>
 #include "imageProcessing.h"
@@ -67,10 +66,6 @@ int Menu::selectOptions() {
 	return choice;
 }
 
-Menu::Menu(FileReader fileReader, FileWriter fileWriter){
-
-}
-
 void Menu::loadImage() {
 	cout << "loadImage" << endl;
 	ImageProcessing img;
@@ -83,7 +78,6 @@ void Menu::loadImage() {
 
 void Menu::saveImage() {
 	cout << "saveImage" << endl;
-	fileWriter.writeFile();
 }
 
 

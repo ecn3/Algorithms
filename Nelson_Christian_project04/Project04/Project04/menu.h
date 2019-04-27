@@ -1,9 +1,6 @@
 #ifndef MENU_H
 #define MENU_H
 
-#include "fileReader.h"
-#include "fileWriter.h"
-
 class Menu
 {
 	int selectOptions();
@@ -21,11 +18,6 @@ class Menu
 	void greyscaleImage();
 
 public:
-	FileReader fileReader;
-	FileWriter fileWriter;
-
-	Menu(FileReader fileReader, FileWriter fileWriter);
-
 	void run();
 };
 

@@ -34,12 +34,16 @@ void ImageProcessing::readImage(string filename) {
 
 	for (int i = 0; i < line.length(); i++) {
 		if (line.at(i) == c) { // when is space
-			col = line.substr(0,i); // sets from 0 to i
-			row = line.substr((i+1), line.length()); // sets froi to length
+			col = line.substr(0, i); // sets from 0 to i
+			row = line.substr((i + 1), line.length()); // sets froi to length
 		}
 
 	}
-	cout << "columns: " << col << " rows: " << row << endl;
+
+	numberOfColumns = stoi(col);
+	numberOfRows = stoi(row);
+
+	cout << "columns: " << numberOfColumns << " rows: " << numberOfRows << endl;
 
 	ifstream.close();
 }

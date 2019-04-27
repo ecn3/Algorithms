@@ -151,16 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="fileReader.h" />
-    <ClInclude Include="fileWriter.h" />
     <ClInclude Include="imageProcessing.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Project04.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fileReader.cpp" />
-    <ClCompile Include="fileWriter.cpp" />
     <ClCompile Include="imageProcessing.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="pch.cpp">

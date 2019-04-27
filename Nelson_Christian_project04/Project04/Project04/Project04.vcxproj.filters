@@ -24,12 +24,6 @@
     <ClInclude Include="Project04.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="fileReader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="fileWriter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="imageProcessing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -42,12 +36,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="menu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fileReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fileWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="imageProcessing.cpp">
