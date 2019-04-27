@@ -88,6 +88,26 @@ void ImageProcessing::rotateImage180() {
 void  ImageProcessing::rotateImage270() {
 	cout << "ImageProcessing::rotateImage270" << endl;
 	//rotate 90 then vertical flip
+	rotateImage90();
+
+	int temp[7][24]; //create temp
+	int k = 6;
+
+	for (int i = 0; i < numberOfColumns; ++i) {
+		for (int j = 0; j < numberOfRows; ++j) {
+			temp[k][i] = arrary90[j][i];
+			k--; //count down
+		}
+		k = 6; //reset
+	}
+	for (int i = 0; i < numberOfColumns; ++i) {
+		for (int j = 0; j < numberOfRows; ++j) {
+			arrary90[j][i] = temp[j][i]; // set to new
+
+		}
+	}
+
+
 }
 
 void ImageProcessing::verticalFlip(){
