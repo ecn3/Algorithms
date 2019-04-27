@@ -1,2 +1,3 @@
 ﻿  imageProcessing.cpp
+c:\users\christian\github\algorithms\nelson_christian_project04\project04\project04\imageprocessing.cpp(35): warning C4018: '<': signed/unsigned mismatch
   Project04.vcxproj -> C:\Users\Christian\github\Algorithms\Nelson_Christian_project04\Project04\Debug\Project04.exe
