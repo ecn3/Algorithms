@@ -86,7 +86,7 @@ void Menu::loadImage() {
 		cout << "Enter filename followed by .pgm, must be less than 31 characters: ";
 		cin >> filename;
 	}
-	filename = "proj4testimage.pgm"; // test
+	//filename = "proj4testimage.pgm"; // test
 	imgProcessor.readImage(filename);
 }
 

@@ -67,113 +67,30 @@ void ImageProcessing::readImage(string filename) {
 
 void ImageProcessing::rotateImage90() {
 	cout << "ImageProcessing::rotateImage90" << endl;
-
-	int manipulatedImg[7][24];
-
-	for (int i = 0; i < 7; i++)
-	{
-		for (int j = 0; j < 24; j++)
-		{
-			myimg[i][j] = myimg[6 - j][i];
-			cout << setfill(' ') << setw(2) << myimg[i][j];
-		}
-	}
-
-
-
-	for (int i = 0; i < 24 / 2; i++)
-	{
-		for (int j = i; j < 24 - i - 1; j++)
-		{
-			int temp = manipulatedImg[i][j];
-			manipulatedImg[i][j] = manipulatedImg[24 - 1 - j][i];
-			manipulatedImg[24 - 1 - j][i] = manipulatedImg[24 - 1 - i][24 - 1 - j];
-			manipulatedImg[24 - 1 - i][24 - 1 - j] = manipulatedImg[j][24 - 1 - i];
-			manipulatedImg[j][24 - 1 - i] = temp;
-			cout << setfill(' ') << setw(2) << manipulatedImg[i][j] << endl;
-		}
-	}
-
-	img.setImgMatrix90(manipulatedImg);
 }
 
 void ImageProcessing::rotateImage180() {
 	cout << "ImageProcessing::rotateImage180" << endl;
-
-	for (int i = 0; i < 7; i++)
-	{
-		for (int j = 0; j < 24; j++)
-		{
-			myimg[i][j] = myimg[i][6 - j];
-			cout << setfill(' ') << setw(2) << myimg[j][i];
-		}
-	}
-	img.setImgMatrix(myimg);
 }
 
 void  ImageProcessing::rotateImage270() {
 	cout << "ImageProcessing::rotateImage270" << endl;
 
-	int manipulatedImg[7][24];
-
-	for (int i = 0; i < 24; i++)
-	{
-		for (int j = 0; j < 7; j++)
-		{
-			manipulatedImg[6 - i][j] = manipulatedImg[i][j];
-			cout << setfill(' ') << setw(2) << myimg[i][j];
-		}
-	}
-	img.setImgMatrix(myimg);
 }
 
 void ImageProcessing::verticalFlip(){
-
-	for (int i = 0; i < 7; i++)
-	{
-		for (int j = 0; i < 24; j++)
-		{
-			myimg[i][j] = myimg[i][6 - j];
-			cout << setfill(' ') << setw(2) << myimg[i][j];
-		}
-	}
-
-	img.setImgMatrix(myimg);
+	cout << "ImageProcessing::verticalFlip" << endl;
 }
 
 void ImageProcessing::horizontalFlip()
 {
-
-	for (int i = 0; i < 7; i++)
-	{
-		for (int j = 0; j < 24; j++)
-		{
-			cout << setfill(' ') << setw(2) << myimg[i][j];
-		}
-	}
-	img.setImgMatrix(myimg);
+	cout << "ImageProcessing::horizontalFlip" << endl;
 }
+
 
 void ImageProcessing::grayscale()
 {
-	int threshold;
-	cout << "Enter the threshold: ";
-	cin >> threshold;
-	int manipulatedImg[24][7];
-
-	for (int i = 0; i < 24; i++)
-	{
-		for (int j = 0; j < 7; j++)
-		{
-			if (manipulatedImg[i][j] > threshold) {
-				manipulatedImg[i][j] = threshold; // if is greater than threshold set to threshold
-			}
-			else{
-				manipulatedImg[i][j] = 0; // when less than or equal set to 0
-			}
-		}
-	}
-	img.setImgMatrix(manipulatedImg);
+	cout << "ImageProcessing::grayscale" << endl;
 }
 
 void ImageProcessing::saveImage(string filename) {
@@ -186,6 +103,9 @@ void ImageProcessing::saveImage(string filename) {
 	for (int i = 0; i < numberOfRows; ++i) {
 		for (int j = 0; j < numberOfColumns; ++j) {
 			myfile << myimg[j][i] << " ";
+			if (myimg[j][i] < 10) {
+				myfile << " "; // do an extra line when less than 10
+			}
 		}
 		myfile << endl; // new line for row
 	}
