@@ -1,8 +1,8 @@
 #include "pch.h"
 #include "menu.h"
-#include "fileReader.h"
 #include <iostream>
 #include <string>
+#include "imageProcessing.h"
 
 using namespace std;
 
@@ -66,18 +66,18 @@ int Menu::selectOptions() {
 	return choice;
 }
 
-Menu::Menu(FileReader fileReader, FileWriter fileWriter){
-
-}
-
 void Menu::loadImage() {
 	cout << "loadImage" << endl;
-	fileReader.readFile();
+	ImageProcessing img;
+
+	//enter file name
+	string filename = "proj4testimage.pgm";
+
+	img.readImage(filename);
 }
 
 void Menu::saveImage() {
 	cout << "saveImage" << endl;
-	fileWriter.writeFile();
 }
 
 
