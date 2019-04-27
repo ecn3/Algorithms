@@ -80,6 +80,22 @@ void  ImageProcessing::rotateImage270() {
 
 void ImageProcessing::verticalFlip(){
 	cout << "ImageProcessing::verticalFlip" << endl;
+	//myimg[23][6] = myimg[23][0]
+	//if j = 6 k = 0
+	int temp[24][7]; //create temp
+	int k = 6;
+	for (int i = 0; i < numberOfRows; ++i) {
+		for (int j = 0; j < numberOfColumns; ++j) {
+			temp[j][k] = myimg[j][i];
+		}
+		k--; //count down
+	}
+	for (int i = 0; i < numberOfRows; ++i) {
+		for (int j = 0; j < numberOfColumns; ++j) {
+			myimg[j][i] = temp[j][i]; // set to new
+		}
+	}
+	
 }
 
 void ImageProcessing::horizontalFlip()
