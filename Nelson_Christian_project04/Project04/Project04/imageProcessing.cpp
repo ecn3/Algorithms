@@ -27,7 +27,7 @@ void ImageProcessing::readImage(string filename) {
 	cout << "Version: " << line << endl; //diplay P2
 
 	getline(ifstream, line); // read in 24 7
-	
+
 	char c = ' ';
 	string col;
 	string row;
@@ -44,6 +44,26 @@ void ImageProcessing::readImage(string filename) {
 	numberOfRows = stoi(row);
 
 	cout << "columns: " << numberOfColumns << " rows: " << numberOfRows << endl;
+
+	getline(ifstream, line); // reads in 15
+	highValue = stoi(line);
+	cout << "highval " << highValue << endl;
+
+	// dynamic allocation
+	int** img = new int*[numberOfColumns];
+	for (int i = 0; i < numberOfColumns; ++i) {
+		img[i] = new int[numberOfRows];
+	}
+
+	string matrixOfNums;
+
+	//read in all rows
+	for (int i = 0; i < numberOfRows; i++) {
+		getline(ifstream, line); // read in each row
+		matrixOfNums += (line + ' '); // put a space between rows
+	}
+
+	cout << "matrixOfNums" << matrixOfNums;
 
 	ifstream.close();
 }
