@@ -3,6 +3,11 @@
 
 class Menu
 {
+
+	int numberOfColumns, numberOfRows, numberOfBands, highValue, totalPixels;
+	int *img[24][7];
+
+public:
 	int selectOptions();
 
 	void saveImage();
@@ -15,12 +20,11 @@ class Menu
 
 	void greyscaleImage();
 
-public:
-	int numberOfColumns, numberOfRows, numberOfBands, highValue, totalPixels;
-
-	int** loadImage();
+	void loadImage();
 
 	void run();
+private:
+
 };
 
 #endif //MENU_H
