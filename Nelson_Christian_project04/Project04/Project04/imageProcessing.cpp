@@ -25,7 +25,7 @@ void ImageProcessing::readImage(string filename) {
 	string line;
 	ifstream ifstream; //create input file stream
 
-	string infile = filename;
+	string infilename = filename;
 	string outfilename;
 	string version = "P2";
 
@@ -49,13 +49,12 @@ void ImageProcessing::readImage(string filename) {
 	{
 		for (int j = 0; j < numberOfColumns; j++)
 		{
-			ifstream >> img[j][i];
+			ifstream >> myimg[j][i];
 		}
 	}
 	//send img to img
 
-	image image(infile, outfilename, version, numberOfRows, numberOfColumns, highValue, img);
-
+	Image image(filename, outfilename, version, numberOfRows, numberOfColumns, highValue, myimg);
 
 	ifstream.close(); // close file
 
@@ -89,6 +88,8 @@ void ImageProcessing::rotateImage90() {
 			cout << setfill(' ') << setw(2) << manipulatedImg[i][j] << endl;
 		}
 	}
+
+	img.setImgMatrix90(manipulatedImg);
 }
 
 void ImageProcessing::rotateImage180() {
@@ -102,7 +103,7 @@ void ImageProcessing::rotateImage180() {
 			cout << setfill(' ') << setw(2) << myimg[j][i];
 		}
 	}
-
+	img.setImgMatrix(myimg);
 }
 
 void  ImageProcessing::rotateImage270() {
@@ -118,7 +119,7 @@ void  ImageProcessing::rotateImage270() {
 			cout << setfill(' ') << setw(2) << myimg[i][j];
 		}
 	}
-	
+	img.setImgMatrix(myimg);
 }
 
 void ImageProcessing::verticalFlip(){
@@ -131,6 +132,7 @@ void ImageProcessing::verticalFlip(){
 			cout << setfill(' ') << setw(2) << myimg[i][j];
 		}
 	}
+	img.setImgMatrix(myimg);
 }
 
 void ImageProcessing::horizontalFlip()
@@ -143,6 +145,7 @@ void ImageProcessing::horizontalFlip()
 			cout << setfill(' ') << setw(2) << myimg[i][j];
 		}
 	}
+	img.setImgMatrix(myimg);
 }
 
 void ImageProcessing::grayscale()
@@ -164,7 +167,7 @@ void ImageProcessing::grayscale()
 			}
 		}
 	}
-
+	img.setImgMatrix(manipulatedImg);
 }
 
 void ImageProcessing::saveImage(string filename) {

@@ -7,7 +7,7 @@
 void print();
 
 class ImageProcessing {
-	image img;
+	Image img;
 	int myimg[24][7];
 public:
 	//variables

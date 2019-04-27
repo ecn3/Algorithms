@@ -5,9 +5,9 @@
 
 using namespace std;
 
-image::image(){}
+Image::Image(){}
 
-image::image(std::string infilename, std::string outfilename, std::string version, int numberOfRows, int numberOfColumns, int highValue, int img[24][7]) {
+Image::Image(std::string infilename, std::string outfilename, std::string version, int numberOfRows, int numberOfColumns, int highValue, int img[24][7]) {
 	this->infilename = infilename;
 	this->outfilename = outfilename;
 	this->version = version;
@@ -17,48 +17,53 @@ image::image(std::string infilename, std::string outfilename, std::string versio
 	this->img[24][7] = img[24][7]; // img
 }// implement constructor
 
-string image::getInfilename() {
+string Image::getInfilename() {
 	return this->infilename;
 }
-string image::getOutfilename() {
+string Image::getOutfilename() {
 	return this->outfilename;
 }
-string image::getVersion() {
+string Image::getVersion() {
 	return this->version;
 }
-int image::getNumberOfRows() {
+int Image::getNumberOfRows() {
 	return this->numberOfRows;
 }
-int image::getNumberOfColumns() {
+int Image::getNumberOfColumns() {
 	return this->numberOfColumns;
 }
-int image::getHighValue() {
+int Image::getHighValue() {
 	return this->highValue;
 }
 
-int image::getImgMatrix() {
+int Image::getImgMatrix() {
 	return this->img[24][7];
 }
 
-void image::setInfilename(string infilename) {
+void Image::setInfilename(string infilename) {
 	this->infilename = infilename;
 }
-void image::setOutfilename(string outfilename) {
+void Image::setOutfilename(string outfilename) {
 	this->outfilename = outfilename;
 }
-void image::setVersion(string version) {
+void Image::setVersion(string version) {
 	this->version = version;
 }
-void image::setNumberOfRows(int numberOfRows) {
+void Image::setNumberOfRows(int numberOfRows) {
 	this->numberOfRows = numberOfRows;
 }
-void image::setNumberOfColumns(int numberOfColumns) {
+void Image::setNumberOfColumns(int numberOfColumns) {
 	this->numberOfColumns = numberOfColumns;
 }
-void image::setHighValue(int highValue) {
+void Image::setHighValue(int highValue) {
 	this->highValue = highValue;
 }
 
-void image::setImgMatrix(int img[24][7]) {
+void Image::setImgMatrix(int img[24][7]) {
 	this->img[24][7] = img[24][7];
+}
+
+
+void Image::setImgMatrix90(int img[7][24]) {
+	this->img[7][24] = img[7][24];
 }
