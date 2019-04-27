@@ -70,7 +70,7 @@ void ImageProcessing::rotateImage90() {
 	int h = 6;
 	for (int k = 0; k < numberOfColumns; k++) {
 		for (int i = 0; i < numberOfRows; ++i) {
-			arrary90[i][k] = myimg[h][k];
+			arrary90[i][k] = myimg[k][h];
 			h--;
 		} // swaps first set of is
 		h = 6;
