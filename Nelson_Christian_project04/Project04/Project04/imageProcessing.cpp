@@ -58,6 +58,20 @@ void ImageProcessing::readImage(string filename) {
 	//cout << " myimg[1][1]: " << myimg[1][1] << endl; //test for 3
 	ifstream.close(); // close file
 
+	ofstream myfile;
+	myfile.open("test.pgm");
+	myfile << version << "\n";
+	myfile << numberOfColumns << " " << numberOfRows << "\n";
+	myfile << highValue << "\n";
+
+	for (int i = 0; i < numberOfRows; ++i) {
+		for (int j = 0; j < numberOfColumns; ++j) {
+			myfile << myimg[j][i] << " ";
+		}
+		myfile << endl; // new line for row
+	}
+
+	myfile.close();
 }
 
 void ImageProcessing::rotateImage90() {
@@ -173,14 +187,16 @@ void ImageProcessing::grayscale()
 void ImageProcessing::saveImage(string filename) {
 	ofstream myfile;
 	myfile.open(filename);
+	cout << "img.getVersion(): " << img.getVersion() << endl;
 	myfile << img.getVersion() << "\n";
-	myfile << img.getNumberOfColumns() << img.getNumberOfRows() << "\n";
+	myfile << img.getNumberOfColumns() << " " << img.getNumberOfRows() << "\n";
 	myfile << img.getHighValue() << "\n";
 
 	for (int i = 0; i < numberOfRows; ++i) {
 	for (int j = 0; j < numberOfColumns; ++j) {
-	myfile << myimg[i][j] << "\n";
+	myfile << myimg[i][j] << " ";
 }
+	myfile << endl; // new line for row
 }
 
 	myfile.close();
