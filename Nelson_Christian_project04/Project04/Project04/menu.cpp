@@ -6,6 +6,8 @@
 
 using namespace std;
 
+ImageProcessing imgProcessor;
+
 void Menu::run() {
 	int choice;
 
@@ -68,7 +70,6 @@ int Menu::selectOptions() {
 
 void Menu::loadImage() {
 	cout << "loadImage" << endl;
-	ImageProcessing imgProcessor;
 	//enter file name
 	string filename = "proj4testimage.pgm";
 
