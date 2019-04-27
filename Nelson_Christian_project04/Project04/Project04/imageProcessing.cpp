@@ -47,3 +47,24 @@ int** ImageProcessing::readImage(string filename) {
 	ifstream.close(); // close file
 	return img;
 }
+
+int** ImageProcessing::rotateImage90(string filename) {
+
+	//delete the below
+	int** img[24][7];
+	return img[24][7];
+}
+
+int** ImageProcessing::rotateImage180(string filename) {
+	
+	//delete the below
+	int** img[24][7];
+	return img[24][7];
+}
+
+int** ImageProcessing::rotateImage270(string filename) {
+	
+	//delete the below
+	int** img[24][7];
+	return img[24][7];
+}
